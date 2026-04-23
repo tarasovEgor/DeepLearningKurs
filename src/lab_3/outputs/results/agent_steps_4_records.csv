@@ -1,0 +1,9 @@
+topic,mode,correctness,groundedness,completeness,coverage,source_consistency,rubric,present_sections,n_steps,n_sources,latency,stop_reason,comment
+Agentic AI for customer support,agent_steps_4,0,0,0,0,0,0.0,0,4,8,5.402663946151733,final_answer_generated,Evaluator did not return valid JSON.
+Graph RAG for enterprise knowledge systems,agent_steps_4,0,0,0,0,0,0.0,0,4,8,13.561251878738403,final_answer_generated,Evaluator did not return valid JSON.
+LLM evaluation and process-aware metrics,agent_steps_4,0,0,0,0,0,0.0,2,4,8,22.296163082122803,final_answer_generated,Evaluator did not return valid JSON.
+Tool-using language models in scientific search,agent_steps_4,4,5,1,1,5,3.2,2,4,8,22.245763778686523,final_answer_generated,"Ответ содержит фактологически верную информацию, корректно отражающую содержание источников 1, 2 и 4 (определение ИИ, описание ChatGPT, автоматизация процедур). Однако генерация обрывается на середине предложения в разделе «Основные подходы», что критически снижает полноту и полезность ответа. Информация не противоречит источникам."
+Retrieval-augmented generation in medicine,agent_steps_4,4,5,1,1,5,3.2,2,4,8,24.395288228988647,final_answer_generated,"Информация в ответе фактологически верна и подтверждается предоставленными источниками, однако ответ технически не завершен (обрывается на середине списка подпунктов '2.'), что критически снижает полноту и охват требуемой информации."
+Planning and reflection in LLM agents,agent_steps_4,0,0,0,0,0,0.0,1,4,8,30.147271871566772,final_answer_generated,Evaluator did not return valid JSON.
+Human-in-the-loop AI systems,agent_steps_4,0,0,0,0,0,0.0,0,4,8,6.387207984924316,final_answer_generated,Evaluator did not return valid JSON.
+Knowledge graphs for procedural reasoning,agent_steps_4,0,0,0,0,0,0.0,0,4,8,7.616724014282227,final_answer_generated,Поле 'Ответ' пустое. Не предоставлен текст ответа для оценки на основе источников или запроса.

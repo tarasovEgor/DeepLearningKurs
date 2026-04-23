@@ -1,0 +1,152 @@
+{
+  "topic": "Knowledge graphs for procedural reasoning",
+  "objective": "Подготовить структурированный научно-аналитический обзор темы",
+  "history": [
+    {
+      "timestamp": "2026-04-23T20:27:34Z",
+      "step_id": 0,
+      "action": "search_wikipedia",
+      "payload": {
+        "topic": "Knowledge graphs for procedural reasoning"
+      },
+      "result_preview": "empty",
+      "n_sources": 0,
+      "next_reason": "Need general context before scientific search.",
+      "latency_ms": 749.7878074645996
+    },
+    {
+      "timestamp": "2026-04-23T20:27:35Z",
+      "step_id": 1,
+      "action": "search_openalex",
+      "payload": {
+        "query": "Knowledge graphs for procedural reasoning",
+        "per_page": 11
+      },
+      "result_preview": "found=11",
+      "n_sources": 11,
+      "next_reason": "If too few sources, rewrite query and retry.",
+      "latency_ms": 906.2480926513672
+    },
+    {
+      "timestamp": "2026-04-23T20:27:35Z",
+      "step_id": 2,
+      "action": "extract_notes",
+      "payload": {
+        "n_sources": 11,
+        "top_k": 8
+      },
+      "result_preview": "notes_prepared=8",
+      "n_sources": 11,
+      "next_reason": "Generate final answer from context and notes.",
+      "latency_ms": null
+    },
+    {
+      "timestamp": "2026-04-23T20:28:00Z",
+      "step_id": 3,
+      "action": "generate_final_answer",
+      "payload": {
+        "topic": "Knowledge graphs for procedural reasoning",
+        "n_notes": 8
+      },
+      "result_preview": "## Определение\n\nНа основе представленных источников под процедурным рассуждением в контексте структурированных представлений знаний понимается способность модели извлекать знания из ситуаций и выполнять логические выводы, опираясь на формализованную структуру данных. В частности, в работе STAR (2024) ситуации в видео представляются с помощью гиперграфов, связывающих атомарные сущности и отношения ",
+      "n_sources": 11,
+      "next_reason": "Either finish or evaluate and revise.",
+      "latency_ms": null
+    }
+  ],
+  "n_sources": 11,
+  "notes": [
+    {
+      "id": "https://openalex.org/W3206166878",
+      "title": "STAR: A Benchmark for Situated Reasoning in Real-World Videos",
+      "year": 2024,
+      "authors": [
+        "Bo Wu",
+        "Shoubin Yu",
+        "Zhenfang Chen",
+        "Joshua B. Tenenbaum",
+        "Chuang Gan"
+      ],
+      "abstract": "Reasoning in the real world is not divorced from situations. How to capture the present knowledge from surrounding situations and perform reasoning accordingly is crucial and challenging for machine intelligence. This paper introduces a new benchmark that evaluates the situated reasoning ability via situation abstraction and logic-grounded question answering for real-world videos, called Situated Reasoning in Real-World Videos (STAR Benchmark). This benchmark is built upon the real-world videos associated with human actions or interactions, which are naturally dynamic, compositional, and logical. The dataset includes four types of questions, including interaction, sequence, prediction, and feasibility. We represent the situations in real-world videos by hyper-graphs connecting extracted atomic entities and relations (e.g., actions, persons, objects, and relationships). Besides visual perception, situated reasoning also requires structured situation comprehension and logical reasoning. Questions and answers are procedurally generated. The answering logic of each question is represented by a functional program based on a situation hyper-graph. We compare various existing video reasoning models and find that they all struggle on this challenging situated reasoning task. We further propose a diagnostic neuro-symbolic model that can disentangle visual perception, situation abstraction, language understanding, and functional reasoning to understand the challenges of this benchmark."
+    },
+    {
+      "id": "https://openalex.org/W2963055053",
+      "title": "Programming with a differentiable forth interpreter",
+      "year": 2017,
+      "authors": [
+        "Matko Bošnjak",
+        "Tim Rocktäschel",
+        "Jason Naradowsky",
+        "Sebastian Riedel"
+      ],
+      "abstract": "Given that in practice training data is scarce for all but a small set of problems, a core question is how to incorporate prior knowledge into a model. In this paper, we consider the case of prior procedural knowledge for neural networks, such as knowing how a program should traverse a sequence, but not what local actions should be performed at each step. To this end, we present an end-to-end differentiable interpreter for the programming language Forth which enables programmers to write program sketches with slots that can be filled with behaviour trained from program input-output data. We can optimise this behaviour directly through gradient descent techniques on user-specified objectives, and also integrate the program into any larger neural computation graph. We show empirically that our interpreter is able to effectively leverage different levels of prior program structure and learn complex behaviours such as sequence sorting and addition. When connected to outputs of an LSTM and trained jointly, our interpreter achieves state-of-the-art accuracy for end-to-end reasoning about quantities expressed in natural language stories."
+    },
+    {
+      "id": "https://openalex.org/W2408283598",
+      "title": "Programming with a Differentiable Forth Interpreter",
+      "year": 2016,
+      "authors": [
+        "Matko Bošnjak",
+        "Tim Rocktäschel",
+        "Jason Naradowsky",
+        "Sebastian Riedel"
+      ],
+      "abstract": "Given that in practice training data is scarce for all but a small set of problems, a core question is how to incorporate prior knowledge into a model. In this paper, we consider the case of prior procedural knowledge for neural networks, such as knowing how a program should traverse a sequence, but not what local actions should be performed at each step. To this end, we present an end-to-end differentiable interpreter for the programming language Forth which enables programmers to write program sketches with slots that can be filled with behaviour trained from program input-output data. We can optimise this behaviour directly through gradient descent techniques on user-specified objectives, and also integrate the program into any larger neural computation graph. We show empirically that our interpreter is able to effectively leverage different levels of prior program structure and learn complex behaviours such as sequence sorting and addition. When connected to outputs of an LSTM and trained jointly, our interpreter achieves state-of-the-art accuracy for end-to-end reasoning about quantities expressed in natural language stories."
+    },
+    {
+      "id": "https://openalex.org/W2143117649",
+      "title": "Causal inference in statistics: An overview",
+      "year": 2009,
+      "authors": [
+        "Judea Pearl"
+      ],
+      "abstract": "This review presents empirical researchers with recent advances in causal inference, and stresses the paradigmatic shifts that must be undertaken in moving from traditional statistical analysis to causal analysis of multivariate data. Special emphasis is placed on the assumptions that underly all causal inferences, the languages used in formulating those assumptions, the conditional nature of all causal and counterfactual claims, and the methods that have been developed for the assessment of such claims. These advances are illustrated using a general theory of causation based on the Structural Causal Model (SCM) described in Pearl (2000a), which subsumes and unifies other approaches to causation, and provides a coherent mathematical foundation for the analysis of causes and counterfactuals. In particular, the paper surveys the development of mathematical tools for inferring (from a combination of data and assumptions) answers to three types of causal queries: (1) queries about the effects of potential interventions, (also called “causal effects” or “policy evaluation”) (2) queries about probabilities of counterfactuals, (including assessment of “regret,” “attribution” or “causes of effects”) and (3) queries about direct and indirect effects (also known as “mediation”). Finally, the paper defines the formal and conceptual relationships between the structural and potential-outcome frameworks and presents tools for a symbiotic analysis that uses the strong features of both."
+    },
+    {
+      "id": "https://openalex.org/W376080155",
+      "title": "Teaching and Learning in the Science Laboratory",
+      "year": 2003,
+      "authors": [
+        "Dimitris Psillos",
+        "Hans Niedderer"
+      ],
+      "abstract": "General Introduction. 1: Approaching Labwork: Frames and Tools. Introduction. Varieties of Labwork: A Way of Profiling Labwork Tasks R. Millar, et al. Issues and Questions Regarding the Effectiveness of Labwork D. Psillos, H. Niedderer. Talking Physics in Labwork Contexts: A Category Based Analysis of Videotapes H. Niedderer, et al. Students' Understanding of the Nature of Science and its Influence on Labwork J. Leach. 2: Standard Labwork Based on Hands-on Experiments. Introduction. Modelling Activities of Students during a Traditional Labwork K. Becu-Robinault. Student's Intellectual Activities during Standard Labwork at Undergraduate Level M. Beney, M.-G. Sere. A Laboratory-Based Teaching Learning Sequence on Fluids: Developing Primary Student Teacher's Conceptual and Procedural Knowledge P. Kariotoglou. Development and Evaluation of a Laboratory Course in Physics for Medical Students H. Theyssen, et al. The Biology Textbook as a Source of Ideas about Scientific Knowledge and Experimental Activity M. Bandiera. 3: Open-Ended Labwork. Introduction. The Role of Epistemological information in open-ended Investigative Labwork A. Guillon, M.-G. Sere. The Effectiveness of Mini-Projects as a Preparation for Open-Ended Investigations J. Lewis. Data Interpretation Activities and Student's Views of the Epistemology of Science during a University Earth Sciences Field Study Course J. Ryder. 4: Labwork and Data Handling. Introduction. The Use of Secondary Data in Teaching about Data Anal"
+    },
+    {
+      "id": "https://openalex.org/W599890814",
+      "title": "Task Analysis Methods for Instructional Design",
+      "year": 1998,
+      "authors": [
+        "David H. Jonassen",
+        "Martin Tessmer",
+        "Wallace H. Hannum"
+      ],
+      "abstract": "Contents: Introduction. Part I: Task Analysis Processes. What Is Task Analysis? Selecting Tasks for Analysis. Classifying Knowledge and Skills From Task Analysis. Part II: Job, Procedural, and Skill Analysis Methods. Task Description. Procedural Analysis. Job Task Analysis. Functional Job Analysis. Part III: Instructional and Guided Learning Analysis Methods. Learning Hierarchy (Prerequisites) Analysis. Information Processing Analysis. Learning Contingency Analysis. Part IV: Cognitive Task Analysis Methods. Goals, Operators, Methods, & Selection (GOMS). Prediction, Actions, Results, Interpretation (PARI). Decompose, Network, and Assess (DNA). Cognitive Simulations. Case-Based Reasoning. Part V: Activity-Based Methods. Activity Theory. Syntactic Analysis. Critical Incident/Critical Decision Methods. Task Knowledge Structures. Part VI: Subject Matter/Content Analysis Methods. Conceptual Graph Analysis. Master Design Chart. Matrix Analysis. Repertory Grid Technique. Fault Tree Analysis. Part VII: Knowledge Elicitation Techniques. Documentation Analysis. Observation. Survey Questionnaires. Interviews. Think-Aloud Protocols. Unstructured Group Interviews: Focus Groups and Brainstorming. Structured Group Interviews: Delphi Technique."
+    },
+    {
+      "id": "https://openalex.org/W1969258302",
+      "title": "Task-based specifications through conceptual graphs",
+      "year": 1996,
+      "authors": [
+        "J. Lee",
+        "L.F. Lai",
+        "W.T. Haung"
+      ],
+      "abstract": "Conceptual modeling is an important step toward the construction of user requirements. Requirements engineering is knowledge intensive and cannot be dealt with using only a few general principles. Therefore, a conceptual model is domain oriented and should represent the richer semantics of the problem domain. The conceptual model also helps designers communicate among themselves and with users. To capture and represent a conceptual model for the problem domain, we need: mechanisms to structure the knowledge of the problem domain at the conceptual level, which has the underlying principles of abstraction and encapsulation; and formalisms to represent the semantics of the problem domain and to provide a reasoning capability for verification and validation. We propose the task based specification methodology as the mechanism to structure the knowledge captured in conceptual models. TBSM offers four main benefits for constructing conceptual models, which are outlined. We propose conceptual graphs as the formalism to express task based specifications where the task structure of problem solving knowledge drives the specification, the pieces of the specification can be iteratively refined, and verification can be performed for a single layer or between layers. We chose conceptual graphs for their expressive power to represent both declarative and procedural knowledge, and for their assimilation capability-that is, their ability to be combined."
+    },
+    {
+      "id": "https://openalex.org/W1990100773",
+      "title": "Why a Diagram is (Sometimes) Worth Ten Thousand Words",
+      "year": 1987,
+      "authors": [
+        "Jill H. Larkin",
+        "Herbert A. Simon"
+      ],
+      "abstract": "We distinguish diagrammatic from sentential paper‐and‐pencil representations of information by developing alternative models of information‐processing systems that are informationally equivalent and that can be characterized as sentential or diagrammatic. Sentential representations are sequential, like the propositions in a text. Diagrammatic representations are indexed by location in a plane. Diagrammatic representations also typically display information that is only implicit in sentential representations and that therefore has to be computed, sometimes at great cost, to make it explicit for use. We then contrast the computational efficiency of these representations for solving several illustrative problems in mathematics and physics. When two representations are informationally equivalent, their computational efficiency depends on the information‐processing operators that act on them. Two sets of operators may differ in their capabilities for recognizing patterns, in the inferences they can carry out directly, and in their control strategies (in particular, the control of search). Diagrammatic and sentential representations support operators that differ in all of these respects. Operators working on one representation may recognize features readily or make inferences directly that are difficult to realize in the other representation. Most important, however, are differences in the efficiency of search for information and in the explicitness of information. In the represent"
+    }
+  ],
+  "status": "finished",
+  "stop_reason": "final_answer_generated",
+  "metrics": {},
+  "final_answer": "## Определение\n\nНа основе представленных источников под процедурным рассуждением в контексте структурированных представлений знаний понимается способность модели извлекать знания из ситуаций и выполнять логические выводы, опираясь на формализованную структуру данных. В частности, в работе STAR (2024) ситуации в видео представляются с помощью гиперграфов, связывающих атомарные сущности и отношения (действия, лица, объекты). В исследовании Lee et al. (1996) концептуальные графы используются для представления как декларативных, так и процедурных знаний в рамках спецификаций задач. Таким образом, в рамках данного обзора процедурное рассуждение опирается на графовые структуры (гиперграфы, концептуальные графы) для моделирования последовательностей действий, логических связей и абстракции ситуаций.\n\n## Основные подходы\n\nВ проанализиров"
+}

@@ -1,0 +1,108 @@
+{
+  "topic": "LLM evaluation and process-aware metrics",
+  "objective": "Подготовить структурированный научно-аналитический обзор темы",
+  "history": [
+    {
+      "timestamp": "2026-04-23T20:18:44Z",
+      "step_id": 0,
+      "action": "search_wikipedia",
+      "payload": {
+        "topic": "LLM evaluation and process-aware metrics"
+      },
+      "result_preview": "empty",
+      "n_sources": 0,
+      "next_reason": "Need general context before scientific search.",
+      "latency_ms": 956.8450450897217
+    },
+    {
+      "timestamp": "2026-04-23T20:18:45Z",
+      "step_id": 1,
+      "action": "search_openalex",
+      "payload": {
+        "query": "LLM evaluation and process-aware metrics",
+        "per_page": 8
+      },
+      "result_preview": "found=8",
+      "n_sources": 8,
+      "next_reason": "If too few sources, rewrite query and retry.",
+      "latency_ms": 1489.433765411377
+    },
+    {
+      "timestamp": "2026-04-23T20:18:45Z",
+      "step_id": 2,
+      "action": "extract_notes",
+      "payload": {
+        "n_sources": 8,
+        "top_k": 3
+      },
+      "result_preview": "notes_prepared=3",
+      "n_sources": 8,
+      "next_reason": "Generate final answer from context and notes.",
+      "latency_ms": null
+    },
+    {
+      "timestamp": "2026-04-23T20:18:49Z",
+      "step_id": 3,
+      "action": "generate_final_answer",
+      "payload": {
+        "topic": "LLM evaluation and process-aware metrics",
+        "n_notes": 3
+      },
+      "result_preview": "",
+      "n_sources": 8,
+      "next_reason": "Either finish or evaluate and revise.",
+      "latency_ms": null
+    }
+  ],
+  "n_sources": 8,
+  "notes": [
+    {
+      "id": "https://openalex.org/W4407097799",
+      "title": "Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond",
+      "year": 2025,
+      "authors": [
+        "Fangzhi Xu",
+        "Qika Lin",
+        "Jiawei Han",
+        "Tianzhe Zhao",
+        "Jun Liu",
+        "Erik Cambria"
+      ],
+      "abstract": "Logical reasoning consistently plays a fundamental and significant role in the domains of knowledge engineering and artificial intelligence. Recently, Large Language Models (LLMs) have emerged as a noteworthy innovation in natural language processing (NLP). However, the question of whether LLMs can effectively address the task of logical reasoning, which requires gradual cognitive inference similar to human intelligence, remains unanswered. To this end, we aim to bridge this gap and provide comprehensive evaluations in this paper. First, to offer systematic evaluations, we select fifteen typical logical reasoning datasets and organize them into deductive, inductive, abductive and mixed-form reasoning settings. Considering the comprehensiveness of evaluations, we include 3 early-era representative LLMs and 4 trending LLMs. Second, different from previous evaluations relying only on simple metrics (e.g., <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">accuracy</i>), we propose fine-level evaluations in objective and subjective manners, covering both answers and explanations, including <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">answer correctness</i>, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">explain correctness</i>, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">explain"
+    },
+    {
+      "id": "https://openalex.org/W4406866655",
+      "title": "Teaching Code LLMs to Use Autocompletion Tools in Repository-Level Code Generation",
+      "year": 2025,
+      "authors": [
+        "Chong Wang",
+        "Jian Zhang",
+        "Yebo Feng",
+        "Tianlin Li",
+        "Weisong Sun",
+        "Yang Liu",
+        "Xin Peng"
+      ],
+      "abstract": "Recent code large language models (LLMs) have shown promising performance in generating standalone functions. However, they face limitations in repository-level code generation due to their lack of awareness of repository-level dependencies ( e.g., user-defined attributes), resulting in dependency errors such as undefined-variable and no-member errors. In this work, we introduce ToolGen , an approach that integrates autocompletion tools into the code LLM generation process to address these dependencies. ToolGen comprises two main phases: Trigger Insertion and Model Fine-tuning (Offline), and Tool-integrated Code Generation (Online). During the offline phase, ToolGen augments functions within a given code corpus with a special mark token, indicating positions to trigger autocompletion tools. These augmented functions, along with their corresponding descriptions, are then used to fine-tune a selected code LLM. In the online phase, ToolGen iteratively generates functions by predicting tokens step-by-step using the fine-tuned LLM. Whenever a mark token is encountered, ToolGen invokes the autocompletion tool to suggest code completions and selects the most appropriate one through constrained greedy search. We conduct comprehensive experiments to evaluate ToolGen ’s effectiveness in repository-level code generation across three distinct code LLMs: CodeGPT, CodeT5, and CodeLlama. To facilitate this evaluation, we create a benchmark comprising 671 real-world code repositories and int"
+    },
+    {
+      "id": "https://openalex.org/W4393160590",
+      "title": "Generative Multi-Modal Knowledge Retrieval with Large Language Models",
+      "year": 2024,
+      "authors": [
+        "Xinwei Long",
+        "Jiali Zeng",
+        "Fandong Meng",
+        "Zhiyuan Ma",
+        "Kaiyan Zhang",
+        "Bowen Zhou",
+        "Jie Zhou"
+      ],
+      "abstract": "Knowledge retrieval with multi-modal queries plays a crucial role in supporting knowledge-intensive multi-modal applications. However, existing methods face challenges in terms of their effectiveness and training efficiency, especially when it comes to training and integrating multiple retrievers to handle multi-modal queries. In this paper, we propose an innovative end-to-end generative framework for multi-modal knowledge retrieval. Our framework takes advantage of the fact that large language models (LLMs) can effectively serve as virtual knowledge bases, even when trained with limited data. We retrieve knowledge via a two-step process: 1) generating knowledge clues related to the queries, and 2) obtaining the relevant document by searching databases using the knowledge clue. In particular, we first introduce an object-aware prefix-tuning technique to guide multi-grained visual learning. Then, we align multi-grained visual features into the textual feature space of the LLM, employing the LLM to capture cross-modal interactions. Subsequently, we construct instruction data with a unified format for model training. Finally, we propose the knowledge-guided generation strategy to impose prior constraints in the decoding steps, thereby promoting the generation of distinctive knowledge clues. Through experiments conducted on three benchmarks, we demonstrate significant improvements ranging from 3.0% to 14.6% across all evaluation metrics when compared to strong baselines."
+    }
+  ],
+  "status": "finished",
+  "stop_reason": "final_answer_generated",
+  "metrics": {},
+  "final_answer": ""
+}

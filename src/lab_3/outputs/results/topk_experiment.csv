@@ -1,0 +1,25 @@
+topic,mode,correctness,groundedness,completeness,coverage,source_consistency,rubric,present_sections,n_steps,n_sources,latency,stop_reason,comment,top_k
+Agentic AI for customer support,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.231107234954834,final_answer_generated,Evaluator did not return valid JSON.,3
+Graph RAG for enterprise knowledge systems,agent_topk_3,0,0,0,0,0,0.0,0,4,8,6.4263880252838135,final_answer_generated,Evaluator did not return valid JSON.,3
+LLM evaluation and process-aware metrics,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.816198825836182,final_answer_generated,Evaluator did not return valid JSON.,3
+Tool-using language models in scientific search,agent_topk_3,0,0,0,0,0,0.0,2,4,8,23.535785913467407,final_answer_generated,Evaluator did not return valid JSON.,3
+Retrieval-augmented generation in medicine,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.362855911254883,final_answer_generated,Evaluator did not return valid JSON.,3
+Planning and reflection in LLM agents,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.64992618560791,final_answer_generated,"В предоставленном материале отсутствует текст ответа для оценки. Поле 'Ответ' пустое, поэтому невозможно проверить корректность, обоснованность или полноту информации.",3
+Human-in-the-loop AI systems,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.643858194351196,final_answer_generated,Evaluator did not return valid JSON.,3
+Knowledge graphs for procedural reasoning,agent_topk_3,0,0,0,0,0,0.0,2,4,8,30.777355670928955,final_answer_generated,Evaluator did not return valid JSON.,3
+Agentic AI for customer support,agent_topk_5,5,5,1,2,5,3.6,1,4,8,21.25124192237854,final_answer_generated,"Ответ содержит точные определения, основанные на источниках [1] и [2], однако текст обрывается на полуслове ('вспом'), что критически снижает полноту ответа. Фактическая часть корректна и хорошо заземлена.",5
+Graph RAG for enterprise knowledge systems,agent_topk_5,3,2,1,1,3,2.0,2,4,8,40.90122103691101,final_answer_generated,"Ответ содержит верное определение Graph RAG, однако текст обрывается на полуслове в разделе 'Основные подходы' (пункт 1). Это критически снижает полноту и покрытие требуемых полей. Хотя утверждения в начале не противоречат источникам, ответ не раскрывает конкретные подходы, описанные в предоставленных источниках (Zep, Conceptual Graph RAG, ACRIE), ограничиваясь лишь заголовком. Отсутствие ссылок на конкретные данные из источников снижает заземленность.",5
+LLM evaluation and process-aware metrics,agent_topk_5,0,0,0,0,0,0.0,2,4,8,24.49750018119812,final_answer_generated,Evaluator did not return valid JSON.,5
+Tool-using language models in scientific search,agent_topk_5,0,0,0,0,0,0.0,0,4,8,8.444476842880249,final_answer_generated,Evaluator did not return valid JSON.,5
+Retrieval-augmented generation in medicine,agent_topk_5,0,0,0,0,0,0.0,0,4,8,5.550275087356567,final_answer_generated,"Поле 'Ответ' пустое. Предоставлен только список источников без текста ответа для оценки. Невозможно проверить корректность, обоснованность или полноту без контента ответа.",5
+Planning and reflection in LLM agents,agent_topk_5,0,0,0,0,0,0.0,0,4,8,6.338332176208496,final_answer_generated,Evaluator did not return valid JSON.,5
+Human-in-the-loop AI systems,agent_topk_5,0,0,0,0,0,0.0,0,4,8,5.151341199874878,final_answer_generated,Evaluator did not return valid JSON.,5
+Knowledge graphs for procedural reasoning,agent_topk_5,0,0,0,0,0,0.0,0,4,8,6.360222101211548,final_answer_generated,Evaluator did not return valid JSON.,5
+Agentic AI for customer support,agent_topk_8,0,0,0,0,0,0.0,0,4,11,5.108648777008057,final_answer_generated,"Поле ответа пустое. Предоставлены только источники, но отсутствует текст ответа для оценки. Невозможно проверить корректность, обоснованность, полноту, покрытие полей или согласованность с источниками.",8
+Graph RAG for enterprise knowledge systems,agent_topk_8,0,0,0,0,0,0.0,1,4,11,25.00070309638977,final_answer_generated,Evaluator did not return valid JSON.,8
+LLM evaluation and process-aware metrics,agent_topk_8,0,0,0,0,0,0.0,2,4,11,26.77554202079773,final_answer_generated,Evaluator did not return valid JSON.,8
+Tool-using language models in scientific search,agent_topk_8,0,0,0,0,0,0.0,2,4,11,42.649364948272705,final_answer_generated,Evaluator did not return valid JSON.,8
+Retrieval-augmented generation in medicine,agent_topk_8,0,0,0,0,0,0.0,0,4,11,20.090638160705566,final_answer_generated,Evaluator did not return valid JSON.,8
+Planning and reflection in LLM agents,agent_topk_8,0,0,0,0,0,0.0,2,4,11,21.12812304496765,final_answer_generated,Evaluator did not return valid JSON.,8
+Human-in-the-loop AI systems,agent_topk_8,0,0,0,0,0,0.0,0,4,11,7.412406921386719,final_answer_generated,Evaluator did not return valid JSON.,8
+Knowledge graphs for procedural reasoning,agent_topk_8,4,4,1,2,5,3.2,2,4,11,26.731970071792603,final_answer_generated,"Ответ содержит точную информацию, основанную на предоставленных источниках (STAR 2024, Lee et al. 1996), и корректно цитирует данные. Однако текст ответа обрывается на полуслове в разделе «Основные подходы» («В проанализ»), что делает его крайне неполным и незавершенным.",8

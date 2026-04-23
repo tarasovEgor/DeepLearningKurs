@@ -1,0 +1,159 @@
+{
+  "topic": "Human-in-the-loop AI systems",
+  "objective": "Подготовить структурированный научно-аналитический обзор темы",
+  "history": [
+    {
+      "timestamp": "2026-04-23T20:27:22Z",
+      "step_id": 0,
+      "action": "search_wikipedia",
+      "payload": {
+        "topic": "Human-in-the-loop AI systems"
+      },
+      "result_preview": "empty",
+      "n_sources": 0,
+      "next_reason": "Need general context before scientific search.",
+      "latency_ms": 698.2760429382324
+    },
+    {
+      "timestamp": "2026-04-23T20:27:23Z",
+      "step_id": 1,
+      "action": "search_openalex",
+      "payload": {
+        "query": "Human-in-the-loop AI systems",
+        "per_page": 11
+      },
+      "result_preview": "found=11",
+      "n_sources": 11,
+      "next_reason": "If too few sources, rewrite query and retry.",
+      "latency_ms": 910.5689525604248
+    },
+    {
+      "timestamp": "2026-04-23T20:27:23Z",
+      "step_id": 2,
+      "action": "extract_notes",
+      "payload": {
+        "n_sources": 11,
+        "top_k": 8
+      },
+      "result_preview": "notes_prepared=8",
+      "n_sources": 11,
+      "next_reason": "Generate final answer from context and notes.",
+      "latency_ms": null
+    },
+    {
+      "timestamp": "2026-04-23T20:27:28Z",
+      "step_id": 3,
+      "action": "generate_final_answer",
+      "payload": {
+        "topic": "Human-in-the-loop AI systems",
+        "n_notes": 8
+      },
+      "result_preview": "",
+      "n_sources": 11,
+      "next_reason": "Either finish or evaluate and revise.",
+      "latency_ms": null
+    }
+  ],
+  "n_sources": 11,
+  "notes": [
+    {
+      "id": "https://openalex.org/W4385245566",
+      "title": "MizAR 60 for Mizar 50",
+      "year": 2023,
+      "authors": [
+        "Jakubův, Jan",
+        "Chvalovský, Karel",
+        "Goertzel, Zarathustra",
+        "Kaliszyk, Cezary",
+        "Olšák, Mirek",
+        "Piotrowski, Bartosz",
+        "Schulz, Stephan",
+        "Suda, Martin",
+        "Urban, Josef"
+      ],
+      "abstract": "As a present to Mizar on its 50th anniversary, we develop an AI/TP system that automatically proves about 60% of the Mizar theorems in the hammer setting. We also automatically prove 75% of the Mizar theorems when the automated provers are helped by using only the premises used in the human-written Mizar proofs. We describe the methods and large-scale experiments leading to these results. This includes in particular the E and Vampire provers, their ENIGMA and Deepire learning modifications, a number of learning-based premise selection methods, and the incremental loop that interleaves growing a corpus of millions of ATP proofs with training increasingly strong AI/TP systems on them. We also present a selection of Mizar problems that were proved automatically."
+    },
+    {
+      "id": "https://openalex.org/W4388628811",
+      "title": "Constructing Ethical AI Based on the “Human-in-the-Loop” System",
+      "year": 2023,
+      "authors": [
+        "Ximeng Chen",
+        "Xiaohong Wang",
+        "Yanzhang Qu"
+      ],
+      "abstract": "The Human-in-the-Loop (HITL) system was first proposed by Robert Monarch, a machine learning expert. It adopted a “hybrid” strategy combining human intelligence and machine intelligence, aiming to improve the accuracy of machine learning models and assist human learning. At present, there have been a number ethical design attempts based on the HITL system, and some progress has been made in the ethical choices of disaster rescue robots and nursing robots. However, there is no analysis of why the HITL system can serve as an effective path in constructing ethical AI and how it can implement the efficiency of AI in ethical scenarios. This paper draws on the feasibility of the HITL system and analyzes how ethical AIs are possible when using the HITL system. We advocate for its application to the entire process of ethical AI design."
+    },
+    {
+      "id": "https://openalex.org/W4292289324",
+      "title": "Human-in-the-loop machine learning: a state of the art",
+      "year": 2022,
+      "authors": [
+        "Eduardo Mosqueira-Rey",
+        "Elena Hernández-Pereira",
+        "David Alonso-Ríos",
+        "José Bobes-Bascarán",
+        "Ángel Fernández-Leal"
+      ],
+      "abstract": "Abstract Researchers are defining new types of interactions between humans and machine learning algorithms generically called human-in-the-loop machine learning. Depending on who is in control of the learning process, we can identify: active learning, in which the system remains in control; interactive machine learning, in which there is a closer interaction between users and learning systems; and machine teaching, where human domain experts have control over the learning process. Aside from control, humans can also be involved in the learning process in other ways. In curriculum learning human domain experts try to impose some structure on the examples presented to improve the learning; in explainable AI the focus is on the ability of the model to explain to humans why a given solution was chosen. This collaboration between AI models and humans should not be limited only to the learning process; if we go further, we can see other terms that arise such as Usable and Useful AI. In this paper we review the state of the art of the techniques involved in the new forms of relationship between humans and ML algorithms. Our contribution is not merely listing the different approaches, but to provide definitions clarifying confusing, varied and sometimes contradictory terms; to elucidate and determine the boundaries between the different methods; and to correlate all the techniques searching for the connections and influences between them."
+    },
+    {
+      "id": "https://openalex.org/W3209912268",
+      "title": "The impact of artificial intelligence on learner–instructor interaction in online learning",
+      "year": 2021,
+      "authors": [
+        "Kyoungwon Seo",
+        "Joice Tang",
+        "Ido Roll",
+        "Sidney Fels",
+        "Dongwook Yoon"
+      ],
+      "abstract": "Artificial intelligence (AI) systems offer effective support for online learning and teaching, including personalizing learning for students, automating instructors' routine tasks, and powering adaptive assessments. However, while the opportunities for AI are promising, the impact of AI systems on the culture of, norms in, and expectations about interactions between students and instructors are still elusive. In online learning, learner-instructor interaction (inter alia, communication, support, and presence) has a profound impact on students' satisfaction and learning outcomes. Thus, identifying how students and instructors perceive the impact of AI systems on their interaction is important to identify any gaps, challenges, or barriers preventing AI systems from achieving their intended potential and risking the safety of these interactions. To address this need for forward-looking decisions, we used Speed Dating with storyboards to analyze the authentic voices of 12 students and 11 instructors on diverse use cases of possible AI systems in online learning. Findings show that participants envision adopting AI systems in online learning can enable personalized learner-instructor interaction at scale but at the risk of violating social boundaries. Although AI systems have been positively recognized for improving the quantity and quality of communication, for providing just-in-time, personalized support for large-scale settings, and for improving the feeling of connection, ther"
+    },
+    {
+      "id": "https://openalex.org/W2766005220",
+      "title": "Viewpoint: Human-in-the-loop Artificial Intelligence",
+      "year": 2019,
+      "authors": [
+        "Fabio Massimo Zanzotto"
+      ],
+      "abstract": "Little by little, newspapers are revealing the bright future that Artificial Intelligence (AI) is building. Intelligent machines will help everywhere. However, this bright future may have a possible dark side: a dramatic job market contraction before its unpredictable transformation. Hence, in a near future, large numbers of job seekers may need financial support while catching up with these novel unpredictable jobs. This possible job market crisis has an antidote inside. In fact, the rise of AI is sustained by the biggest knowledge theft of the recent years. Many learning AI machines are extracting knowledge from unaware skilled or unskilled workers by analyzing their interactions. By passionately doing their jobs, many of these workers are shooting themselves in the feet. In this paper, we propose Human-in-the-loop Artificial Intelligence (HitAI) as a fairer paradigm for AI systems. Recognizing that any AI system has humans in the loop, HitAI will reward these aware and unaware knowledge producers with a different scheme: decisions of AI systems generating revenues will repay the legitimate owners of the knowledge used for taking those decisions. As modern Merry Men, HitAI researchers should fight for a fairer Robin Hood Artificial Intelligence that gives back what it steals. This article is part of the special track on AI and Society."
+    },
+    {
+      "id": "https://openalex.org/W4407370216",
+      "title": "Advancing patent law with generative AI: Human-in-the-loop systems for AI-assisted drafting, prior art search, and multimodal IP protection",
+      "year": 2025,
+      "authors": [
+        "Luong Vu Bui"
+      ],
+      "abstract": ""
+    },
+    {
+      "id": "https://openalex.org/W4402168868",
+      "title": "From “Human in the Loop” to a Participatory System of Governance for AI in Healthcare",
+      "year": 2024,
+      "authors": [
+        "Zachary Griffen",
+        "Kellie Owens"
+      ],
+      "abstract": ""
+    },
+    {
+      "id": "https://openalex.org/W4317757464",
+      "title": "Human–AI collaboration enables more empathic conversations in text-based peer-to-peer mental health support",
+      "year": 2023,
+      "authors": [
+        "Ashish Sharma",
+        "Inna Wanyin Lin",
+        "Adam S. Miner",
+        "David C. Atkins",
+        "Tim Althoff"
+      ],
+      "abstract": ""
+    }
+  ],
+  "status": "finished",
+  "stop_reason": "final_answer_generated",
+  "metrics": {},
+  "final_answer": ""
+}

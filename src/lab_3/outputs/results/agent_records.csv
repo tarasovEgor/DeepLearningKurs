@@ -1,0 +1,9 @@
+topic,mode,correctness,groundedness,completeness,coverage,source_consistency,rubric,present_sections,n_steps,n_sources,latency,stop_reason,comment
+Agentic AI for customer support,agent,0,0,0,0,0,0.0,1,4,8,19.0768780708313,final_answer_generated,Evaluator did not return valid JSON.
+Graph RAG for enterprise knowledge systems,agent,0,0,0,0,0,0.0,0,4,8,6.903844118118286,final_answer_generated,Evaluator did not return valid JSON.
+LLM evaluation and process-aware metrics,agent,0,0,0,0,0,0.0,0,4,8,5.225643157958984,final_answer_generated,"Поле 'Ответ' пустое. Невозможно провести оценку качества, так как отсутствует текст ответа для анализа."
+Tool-using language models in scientific search,agent,0,0,0,0,0,0.0,2,4,8,27.276097059249878,final_answer_generated,Evaluator did not return valid JSON.
+Retrieval-augmented generation in medicine,agent,0,0,0,0,0,0.0,0,4,8,5.149765253067017,final_answer_generated,Evaluator did not return valid JSON.
+Planning and reflection in LLM agents,agent,3,4,1,2,5,3.0,1,4,8,20.59035587310791,final_answer_generated,"Ответ содержит фактологически верную информацию, корректно цитирующую предоставленные источники (Bandi et al., 2025; Singh et al., 2024). Однако текст обрывается на полуслове ('Эти механизмы необходимы'), что критически снижает полноту и завершенность ответа. Цитирование соответствует источникам."
+Human-in-the-loop AI systems,agent,0,0,0,0,0,0.0,2,4,8,18.349756956100464,final_answer_generated,Evaluator did not return valid JSON.
+Knowledge graphs for procedural reasoning,agent,0,0,0,0,0,0.0,1,4,8,21.761051893234253,final_answer_generated,Evaluator did not return valid JSON.

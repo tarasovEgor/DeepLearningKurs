@@ -1,0 +1,122 @@
+{
+  "topic": "Knowledge graphs for procedural reasoning",
+  "objective": "Подготовить структурированный научно-аналитический обзор темы",
+  "history": [
+    {
+      "timestamp": "2026-04-23T20:08:54Z",
+      "step_id": 0,
+      "action": "search_wikipedia",
+      "payload": {
+        "topic": "Knowledge graphs for procedural reasoning"
+      },
+      "result_preview": "empty",
+      "n_sources": 0,
+      "next_reason": "Need general context before scientific search.",
+      "latency_ms": 693.2311058044434
+    },
+    {
+      "timestamp": "2026-04-23T20:08:55Z",
+      "step_id": 1,
+      "action": "search_openalex",
+      "payload": {
+        "query": "Knowledge graphs for procedural reasoning",
+        "per_page": 8
+      },
+      "result_preview": "found=8",
+      "n_sources": 8,
+      "next_reason": "If too few sources, rewrite query and retry.",
+      "latency_ms": 861.2091541290283
+    },
+    {
+      "timestamp": "2026-04-23T20:08:55Z",
+      "step_id": 2,
+      "action": "extract_notes",
+      "payload": {
+        "n_sources": 8,
+        "top_k": 5
+      },
+      "result_preview": "notes_prepared=5",
+      "n_sources": 8,
+      "next_reason": "Generate final answer from context and notes.",
+      "latency_ms": null
+    },
+    {
+      "timestamp": "2026-04-23T20:09:15Z",
+      "step_id": 3,
+      "action": "generate_final_answer",
+      "payload": {
+        "topic": "Knowledge graphs for procedural reasoning",
+        "n_notes": 5
+      },
+      "result_preview": "## Определение\n\nНа основе представленных источников понятие процедурного рассуждения (procedural reasoning) в контексте работы с графами данных не имеет единого универсального определения, однако выделяются следующие ключевые аспекты:\n\n*   **Структурированное понимание ситуаций:** Рассуждение в реальном мире требует не только визуального восприятия, но и структурированного понимания ситуаций и лог",
+      "n_sources": 8,
+      "next_reason": "Either finish or evaluate and revise.",
+      "latency_ms": null
+    }
+  ],
+  "n_sources": 8,
+  "notes": [
+    {
+      "id": "https://openalex.org/W3206166878",
+      "title": "STAR: A Benchmark for Situated Reasoning in Real-World Videos",
+      "year": 2024,
+      "authors": [
+        "Bo Wu",
+        "Shoubin Yu",
+        "Zhenfang Chen",
+        "Joshua B. Tenenbaum",
+        "Chuang Gan"
+      ],
+      "abstract": "Reasoning in the real world is not divorced from situations. How to capture the present knowledge from surrounding situations and perform reasoning accordingly is crucial and challenging for machine intelligence. This paper introduces a new benchmark that evaluates the situated reasoning ability via situation abstraction and logic-grounded question answering for real-world videos, called Situated Reasoning in Real-World Videos (STAR Benchmark). This benchmark is built upon the real-world videos associated with human actions or interactions, which are naturally dynamic, compositional, and logical. The dataset includes four types of questions, including interaction, sequence, prediction, and feasibility. We represent the situations in real-world videos by hyper-graphs connecting extracted atomic entities and relations (e.g., actions, persons, objects, and relationships). Besides visual perception, situated reasoning also requires structured situation comprehension and logical reasoning. Questions and answers are procedurally generated. The answering logic of each question is represented by a functional program based on a situation hyper-graph. We compare various existing video reasoning models and find that they all struggle on this challenging situated reasoning task. We further propose a diagnostic neuro-symbolic model that can disentangle visual perception, situation abstraction, language understanding, and functional reasoning to understand the challenges of this benchmark."
+    },
+    {
+      "id": "https://openalex.org/W2963055053",
+      "title": "Programming with a differentiable forth interpreter",
+      "year": 2017,
+      "authors": [
+        "Matko Bošnjak",
+        "Tim Rocktäschel",
+        "Jason Naradowsky",
+        "Sebastian Riedel"
+      ],
+      "abstract": "Given that in practice training data is scarce for all but a small set of problems, a core question is how to incorporate prior knowledge into a model. In this paper, we consider the case of prior procedural knowledge for neural networks, such as knowing how a program should traverse a sequence, but not what local actions should be performed at each step. To this end, we present an end-to-end differentiable interpreter for the programming language Forth which enables programmers to write program sketches with slots that can be filled with behaviour trained from program input-output data. We can optimise this behaviour directly through gradient descent techniques on user-specified objectives, and also integrate the program into any larger neural computation graph. We show empirically that our interpreter is able to effectively leverage different levels of prior program structure and learn complex behaviours such as sequence sorting and addition. When connected to outputs of an LSTM and trained jointly, our interpreter achieves state-of-the-art accuracy for end-to-end reasoning about quantities expressed in natural language stories."
+    },
+    {
+      "id": "https://openalex.org/W2408283598",
+      "title": "Programming with a Differentiable Forth Interpreter",
+      "year": 2016,
+      "authors": [
+        "Matko Bošnjak",
+        "Tim Rocktäschel",
+        "Jason Naradowsky",
+        "Sebastian Riedel"
+      ],
+      "abstract": "Given that in practice training data is scarce for all but a small set of problems, a core question is how to incorporate prior knowledge into a model. In this paper, we consider the case of prior procedural knowledge for neural networks, such as knowing how a program should traverse a sequence, but not what local actions should be performed at each step. To this end, we present an end-to-end differentiable interpreter for the programming language Forth which enables programmers to write program sketches with slots that can be filled with behaviour trained from program input-output data. We can optimise this behaviour directly through gradient descent techniques on user-specified objectives, and also integrate the program into any larger neural computation graph. We show empirically that our interpreter is able to effectively leverage different levels of prior program structure and learn complex behaviours such as sequence sorting and addition. When connected to outputs of an LSTM and trained jointly, our interpreter achieves state-of-the-art accuracy for end-to-end reasoning about quantities expressed in natural language stories."
+    },
+    {
+      "id": "https://openalex.org/W376080155",
+      "title": "Teaching and Learning in the Science Laboratory",
+      "year": 2003,
+      "authors": [
+        "Dimitris Psillos",
+        "Hans Niedderer"
+      ],
+      "abstract": "General Introduction. 1: Approaching Labwork: Frames and Tools. Introduction. Varieties of Labwork: A Way of Profiling Labwork Tasks R. Millar, et al. Issues and Questions Regarding the Effectiveness of Labwork D. Psillos, H. Niedderer. Talking Physics in Labwork Contexts: A Category Based Analysis of Videotapes H. Niedderer, et al. Students' Understanding of the Nature of Science and its Influence on Labwork J. Leach. 2: Standard Labwork Based on Hands-on Experiments. Introduction. Modelling Activities of Students during a Traditional Labwork K. Becu-Robinault. Student's Intellectual Activities during Standard Labwork at Undergraduate Level M. Beney, M.-G. Sere. A Laboratory-Based Teaching Learning Sequence on Fluids: Developing Primary Student Teacher's Conceptual and Procedural Knowledge P. Kariotoglou. Development and Evaluation of a Laboratory Course in Physics for Medical Students H. Theyssen, et al. The Biology Textbook as a Source of Ideas about Scientific Knowledge and Experimental Activity M. Bandiera. 3: Open-Ended Labwork. Introduction. The Role of Epistemological information in open-ended Investigative Labwork A. Guillon, M.-G. Sere. The Effectiveness of Mini-Projects as a Preparation for Open-Ended Investigations J. Lewis. Data Interpretation Activities and Student's Views of the Epistemology of Science during a University Earth Sciences Field Study Course J. Ryder. 4: Labwork and Data Handling. Introduction. The Use of Secondary Data in Teaching about Data Anal"
+    },
+    {
+      "id": "https://openalex.org/W599890814",
+      "title": "Task Analysis Methods for Instructional Design",
+      "year": 1998,
+      "authors": [
+        "David H. Jonassen",
+        "Martin Tessmer",
+        "Wallace H. Hannum"
+      ],
+      "abstract": "Contents: Introduction. Part I: Task Analysis Processes. What Is Task Analysis? Selecting Tasks for Analysis. Classifying Knowledge and Skills From Task Analysis. Part II: Job, Procedural, and Skill Analysis Methods. Task Description. Procedural Analysis. Job Task Analysis. Functional Job Analysis. Part III: Instructional and Guided Learning Analysis Methods. Learning Hierarchy (Prerequisites) Analysis. Information Processing Analysis. Learning Contingency Analysis. Part IV: Cognitive Task Analysis Methods. Goals, Operators, Methods, & Selection (GOMS). Prediction, Actions, Results, Interpretation (PARI). Decompose, Network, and Assess (DNA). Cognitive Simulations. Case-Based Reasoning. Part V: Activity-Based Methods. Activity Theory. Syntactic Analysis. Critical Incident/Critical Decision Methods. Task Knowledge Structures. Part VI: Subject Matter/Content Analysis Methods. Conceptual Graph Analysis. Master Design Chart. Matrix Analysis. Repertory Grid Technique. Fault Tree Analysis. Part VII: Knowledge Elicitation Techniques. Documentation Analysis. Observation. Survey Questionnaires. Interviews. Think-Aloud Protocols. Unstructured Group Interviews: Focus Groups and Brainstorming. Structured Group Interviews: Delphi Technique."
+    }
+  ],
+  "status": "finished",
+  "stop_reason": "final_answer_generated",
+  "metrics": {},
+  "final_answer": "## Определение\n\nНа основе представленных источников понятие процедурного рассуждения (procedural reasoning) в контексте работы с графами данных не имеет единого универсального определения, однако выделяются следующие ключевые аспекты:\n\n*   **Структурированное понимание ситуаций:** Рассуждение в реальном мире требует не только визуального восприятия, но и структурированного понимания ситуаций и логического рассуждения. Ситуации могут быть представлены с помощью гиперграфов, связывающих извлеченные атомарные сущности и отношения (например, действия, лица, объекты) [1].\n*   **Процедурные знания:** В контексте нейронных сетей процедурные знания включают понимание того, как программа должна обходить последовательность, даже если локальные действия на каждом шаге неизвестны. Это позволяет интегрировать prior procedural knowledge (предыдущие процедурные знания) в модель [2,"
+}

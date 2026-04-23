@@ -1,0 +1,9 @@
+topic,mode,correctness,groundedness,completeness,coverage,source_consistency,rubric,present_sections,n_steps,n_sources,latency,stop_reason,comment
+Agentic AI for customer support,baseline,4,0,1,2,0,1.4,2,3,0,21.652229070663452,baseline_completed,"Текст обрывается на полуслове ('через'), что критически снижает полноту. Источники отсутствуют (пустой список), что делает невозможной проверку фактов и оценку согласованности. Содержательная часть до обрыва корректна."
+Graph RAG for enterprise knowledge systems,baseline,0,0,0,0,0,0.0,0,3,0,3.357978105545044,baseline_completed,Evaluator did not return valid JSON.
+LLM evaluation and process-aware metrics,baseline,0,0,0,0,0,0.0,2,3,0,19.87915587425232,baseline_completed,Evaluator did not return valid JSON.
+Tool-using language models in scientific search,baseline,0,0,0,0,0,0.0,0,3,0,3.3530220985412598,baseline_completed,"Ответ отсутствует. Текст ответа пустой, источники не предоставлены. Невозможно провести оценку по критериям."
+Retrieval-augmented generation in medicine,baseline,5,0,3,4,0,2.4,2,3,0,28.010547876358032,baseline_completed,"Ответ содержит фактологически верную информацию о RAG в медицине, однако критически отсутствует фактическая база (источники указаны как пустой список). Это делает ответ не заземленным и неконсистентным по источникам. По содержанию ответ краток, но покрывает основные аспекты темы."
+Planning and reflection in LLM agents,baseline,0,0,0,0,0,0.0,2,3,0,17.816006898880005,baseline_completed,Evaluator did not return valid JSON.
+Human-in-the-loop AI systems,baseline,0,0,0,0,0,0.0,0,3,0,3.747454881668091,baseline_completed,Ответ отсутствует в предоставленном тексте. Источники также пусты. Невозможно провести оценку качества.
+Knowledge graphs for procedural reasoning,baseline,0,0,0,0,0,0.0,2,3,0,27.19203519821167,baseline_completed,Evaluator did not return valid JSON.

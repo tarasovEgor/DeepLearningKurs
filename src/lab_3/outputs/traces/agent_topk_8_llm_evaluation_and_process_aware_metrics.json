@@ -1,0 +1,209 @@
+{
+  "topic": "LLM evaluation and process-aware metrics",
+  "objective": "Подготовить структурированный научно-аналитический обзор темы",
+  "history": [
+    {
+      "timestamp": "2026-04-23T20:25:18Z",
+      "step_id": 0,
+      "action": "search_wikipedia",
+      "payload": {
+        "topic": "LLM evaluation and process-aware metrics"
+      },
+      "result_preview": "empty",
+      "n_sources": 0,
+      "next_reason": "Need general context before scientific search.",
+      "latency_ms": 870.107889175415
+    },
+    {
+      "timestamp": "2026-04-23T20:25:19Z",
+      "step_id": 1,
+      "action": "search_openalex",
+      "payload": {
+        "query": "LLM evaluation and process-aware metrics",
+        "per_page": 11
+      },
+      "result_preview": "found=11",
+      "n_sources": 11,
+      "next_reason": "If too few sources, rewrite query and retry.",
+      "latency_ms": 1458.380937576294
+    },
+    {
+      "timestamp": "2026-04-23T20:25:19Z",
+      "step_id": 2,
+      "action": "extract_notes",
+      "payload": {
+        "n_sources": 11,
+        "top_k": 8
+      },
+      "result_preview": "notes_prepared=8",
+      "n_sources": 11,
+      "next_reason": "Generate final answer from context and notes.",
+      "latency_ms": null
+    },
+    {
+      "timestamp": "2026-04-23T20:25:44Z",
+      "step_id": 3,
+      "action": "generate_final_answer",
+      "payload": {
+        "topic": "LLM evaluation and process-aware metrics",
+        "n_notes": 8
+      },
+      "result_preview": "## Определение\n\nВ контексте представленных научных источников, оценка больших языковых моделей (LLM) определяется как процесс систематического анализа их производительности и способности решать специфические задачи, такие как логическое рассуждение, генерация кода или медицинская диагностика. Оценка выходит за рамки простых метрик (например, точности) и включает в себя «тонкие» (fine-level) оценки",
+      "n_sources": 11,
+      "next_reason": "Either finish or evaluate and revise.",
+      "latency_ms": null
+    }
+  ],
+  "n_sources": 11,
+  "notes": [
+    {
+      "id": "https://openalex.org/W4407097799",
+      "title": "Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond",
+      "year": 2025,
+      "authors": [
+        "Fangzhi Xu",
+        "Qika Lin",
+        "Jiawei Han",
+        "Tianzhe Zhao",
+        "Jun Liu",
+        "Erik Cambria"
+      ],
+      "abstract": "Logical reasoning consistently plays a fundamental and significant role in the domains of knowledge engineering and artificial intelligence. Recently, Large Language Models (LLMs) have emerged as a noteworthy innovation in natural language processing (NLP). However, the question of whether LLMs can effectively address the task of logical reasoning, which requires gradual cognitive inference similar to human intelligence, remains unanswered. To this end, we aim to bridge this gap and provide comprehensive evaluations in this paper. First, to offer systematic evaluations, we select fifteen typical logical reasoning datasets and organize them into deductive, inductive, abductive and mixed-form reasoning settings. Considering the comprehensiveness of evaluations, we include 3 early-era representative LLMs and 4 trending LLMs. Second, different from previous evaluations relying only on simple metrics (e.g., <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">accuracy</i>), we propose fine-level evaluations in objective and subjective manners, covering both answers and explanations, including <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">answer correctness</i>, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">explain correctness</i>, <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">explain"
+    },
+    {
+      "id": "https://openalex.org/W4406866655",
+      "title": "Teaching Code LLMs to Use Autocompletion Tools in Repository-Level Code Generation",
+      "year": 2025,
+      "authors": [
+        "Chong Wang",
+        "Jian Zhang",
+        "Yebo Feng",
+        "Tianlin Li",
+        "Weisong Sun",
+        "Yang Liu",
+        "Xin Peng"
+      ],
+      "abstract": "Recent code large language models (LLMs) have shown promising performance in generating standalone functions. However, they face limitations in repository-level code generation due to their lack of awareness of repository-level dependencies ( e.g., user-defined attributes), resulting in dependency errors such as undefined-variable and no-member errors. In this work, we introduce ToolGen , an approach that integrates autocompletion tools into the code LLM generation process to address these dependencies. ToolGen comprises two main phases: Trigger Insertion and Model Fine-tuning (Offline), and Tool-integrated Code Generation (Online). During the offline phase, ToolGen augments functions within a given code corpus with a special mark token, indicating positions to trigger autocompletion tools. These augmented functions, along with their corresponding descriptions, are then used to fine-tune a selected code LLM. In the online phase, ToolGen iteratively generates functions by predicting tokens step-by-step using the fine-tuned LLM. Whenever a mark token is encountered, ToolGen invokes the autocompletion tool to suggest code completions and selects the most appropriate one through constrained greedy search. We conduct comprehensive experiments to evaluate ToolGen ’s effectiveness in repository-level code generation across three distinct code LLMs: CodeGPT, CodeT5, and CodeLlama. To facilitate this evaluation, we create a benchmark comprising 671 real-world code repositories and int"
+    },
+    {
+      "id": "https://openalex.org/W4410949641",
+      "title": "Hybrid TrafficAI: A Generative AI Framework for Real-Time Traffic Simulation and Adaptive Behavior Modeling",
+      "year": 2025,
+      "authors": [
+        "Hazrat Bilal",
+        "Abbas Rehman",
+        "Muhammad Shamrooz Aslam",
+        "Inam Ullah",
+        "Wen‐Jer Chang",
+        "Neeraj Kumar",
+        "Abdullah M. Almuhaideb"
+      ],
+      "abstract": "Traffic congestion, accidents, and unpredictable driver behaviour remain significant challenges in urban transportation systems. Traditional traffic simulation models often fail to adapt to dynamic environments and lack accuracy handling edge-case scenarios. To address these limitations, hybrid TrafficAI, an innovative Generative AI-based framework that integrates advanced modules for traffic simulation, behaviour modelling and anomaly detection. The framework incorporates several key components. First, an Adaptive Multi-Modal Fusion Engine (AMFE) seamlessly integrates video, LiDAR, and textual data. This is achieved through dynamic feature alignment layers and context-aware gating mechanisms. Second, an Edge-Case Generative Module (ECGM) augments synthetic edge-case scenarios. Third, a Temporal-Spatial Attention Network (TSAN) captures short-term and long-term traffic dependencies. Finally, large language model-driven semantic reasoning modules extract contextual insights from unstructured textual data, such as traffic reports and incident logs. The framework employs a hybrid dual-stage optimization process, combining unsupervised generative pre-training with fine-tuned supervised calibration to ensure efficient convergence and reduced latency. By fusing multi-modal data, enhancing anomaly robustness with synthetic edge-case scenarios, and interpreting contextual semantics with LLM, hybrid TrafficAI achieves precise anomaly detection, trajectory prediction and adaptive decis"
+    },
+    {
+      "id": "https://openalex.org/W4393160590",
+      "title": "Generative Multi-Modal Knowledge Retrieval with Large Language Models",
+      "year": 2024,
+      "authors": [
+        "Xinwei Long",
+        "Jiali Zeng",
+        "Fandong Meng",
+        "Zhiyuan Ma",
+        "Kaiyan Zhang",
+        "Bowen Zhou",
+        "Jie Zhou"
+      ],
+      "abstract": "Knowledge retrieval with multi-modal queries plays a crucial role in supporting knowledge-intensive multi-modal applications. However, existing methods face challenges in terms of their effectiveness and training efficiency, especially when it comes to training and integrating multiple retrievers to handle multi-modal queries. In this paper, we propose an innovative end-to-end generative framework for multi-modal knowledge retrieval. Our framework takes advantage of the fact that large language models (LLMs) can effectively serve as virtual knowledge bases, even when trained with limited data. We retrieve knowledge via a two-step process: 1) generating knowledge clues related to the queries, and 2) obtaining the relevant document by searching databases using the knowledge clue. In particular, we first introduce an object-aware prefix-tuning technique to guide multi-grained visual learning. Then, we align multi-grained visual features into the textual feature space of the LLM, employing the LLM to capture cross-modal interactions. Subsequently, we construct instruction data with a unified format for model training. Finally, we propose the knowledge-guided generation strategy to impose prior constraints in the decoding steps, thereby promoting the generation of distinctive knowledge clues. Through experiments conducted on three benchmarks, we demonstrate significant improvements ranging from 3.0% to 14.6% across all evaluation metrics when compared to strong baselines."
+    },
+    {
+      "id": "https://openalex.org/W4395483680",
+      "title": "A Comprehensive Survey on Evaluating Large Language Model Applications in the Medical Industry",
+      "year": 2024,
+      "authors": [
+        "Yining Huang",
+        "Keke Tang",
+        "Meilian Chen",
+        "Wang, Boyuan"
+      ],
+      "abstract": "Since the inception of the Transformer architecture in 2017, Large Language Models (LLMs) such as GPT and BERT have evolved significantly, impacting various industries with their advanced capabilities in language understanding and generation. These models have shown potential to transform the medical field, highlighting the necessity for specialized evaluation frameworks to ensure their effective and ethical deployment. This comprehensive survey delineates the extensive application and requisite evaluation of LLMs within healthcare, emphasizing the critical need for empirical validation to fully exploit their capabilities in enhancing healthcare outcomes. Our survey is structured to provide an in-depth analysis of LLM applications across clinical settings, medical text data processing, research, education, and public health awareness. We begin by exploring the roles of LLMs in various medical applications, detailing their evaluation based on performance in tasks such as clinical diagnosis, medical text data processing, information retrieval, data analysis, and educational content generation. The subsequent sections offer a comprehensive discussion on the evaluation methods and metrics employed, including models, evaluators, and comparative experiments. We further examine the benchmarks and datasets utilized in these evaluations, providing a categorized description of benchmarks for tasks like question answering, summarization, information extraction, bioinformatics, informati"
+    },
+    {
+      "id": "https://openalex.org/W4401634806",
+      "title": "Comparative analysis of paraphrasing performance of <scp>ChatGPT</scp>, <scp>GPT</scp>‐3, and <scp>T5</scp> language models using a new <scp>ChatGPT</scp> generated dataset: <scp>ParaGPT</scp>",
+      "year": 2024,
+      "authors": [
+        "Meltem Kurt Pehli̇vanoğlu",
+        "Robera Tadesse Gobosho",
+        "Muhammad Abdan Syakura",
+        "Vimal Shanmuganathan",
+        "Luis de‐la‐Fuente‐Valentín"
+      ],
+      "abstract": "Abstract Paraphrase generation is a fundamental natural language processing (NLP) task that refers to the process of generating a well‐formed and coherent output sentence that exhibits both syntactic and/or lexical diversity from the input sentence, while simultaneously ensuring that the semantic similarity between the two sentences is preserved. However, the availability of high‐quality paraphrase datasets has been limited, particularly for machine‐generated sentences. In this paper, we present ParaGPT, a new paraphrase dataset of 81,000 machine‐generated sentence pairs, including 27,000 reference sentences (ChatGPT‐generated sentences), and 81,000 paraphrases obtained by using three different large language models (LLMs): ChatGPT, GPT‐3, and T5. We used ChatGPT to generate 27,000 sentences that cover a diverse array of topics and sentence structures, thus providing diverse inputs for the models. In addition, we evaluated the quality of the generated paraphrases using various automatic evaluation metrics. Furthermore, we provide insights into the strengths and drawbacks of each LLM in generating paraphrases by conducting a comparative analysis of the paraphrasing performance of the three LLMs. According to our findings, ChatGPT's performance, as per the evaluation metrics provided, was deemed impressive and commendable, owing to its higher‐than‐average scores for semantic similarity, which implies a higher degree of similarity between the generated paraphrase and the referen"
+    },
+    {
+      "id": "https://openalex.org/W4393065402",
+      "title": "A survey on large language model based autonomous agents",
+      "year": 2024,
+      "authors": [
+        "Lei Wang",
+        "Chen Ma",
+        "Xueyang Feng",
+        "Zeyu Zhang",
+        "Hao Yang",
+        "Jingsen Zhang",
+        "Zhiyuan Chen",
+        "Jiakai Tang",
+        "Xu Chen",
+        "Yankai Lin",
+        "Wayne Xin Zhao",
+        "Zhewei Wei",
+        "Ji-Rong Wen"
+      ],
+      "abstract": "Abstract Autonomous agents have long been a research focus in academic and industry communities. Previous research often focuses on training agents with limited knowledge within isolated environments, which diverges significantly from human learning processes, and makes the agents hard to achieve human-like decisions. Recently, through the acquisition of vast amounts of Web knowledge, large language models (LLMs) have shown potential in human-level intelligence, leading to a surge in research on LLM-based autonomous agents. In this paper, we present a comprehensive survey of these studies, delivering a systematic review of LLM-based autonomous agents from a holistic perspective. We first discuss the construction of LLM-based autonomous agents, proposing a unified framework that encompasses much of previous work. Then, we present a overview of the diverse applications of LLM-based autonomous agents in social science, natural science, and engineering. Finally, we delve into the evaluation strategies commonly used for LLM-based autonomous agents. Based on the previous studies, we also present several challenges and future directions in this field."
+    },
+    {
+      "id": "https://openalex.org/W4384071683",
+      "title": "Large language models encode clinical knowledge",
+      "year": 2023,
+      "authors": [
+        "Karan Singhal",
+        "Shekoofeh Azizi",
+        "Tao Tu",
+        "S. Sara Mahdavi",
+        "Jason Lee",
+        "Hyung Won Chung",
+        "Nathan Scales",
+        "Ajay Kumar Tanwani",
+        "Heather Cole-Lewis",
+        "Stephen Pfohl",
+        "Perry W. Payne",
+        "Martin Seneviratne",
+        "Paul Gamble",
+        "Christopher Kelly",
+        "Abubakr Babiker",
+        "Nathanael Schärli",
+        "Aakanksha Chowdhery",
+        "P. Mansfield",
+        "Dina Demner‐Fushman",
+        "Blaise Agüera y Arcas",
+        "Dale R. Webster",
+        "Greg S. Corrado",
+        "Yossi Matias",
+        "Katherine Chou",
+        "Juraj Gottweis",
+        "Nenad Tomašev",
+        "Yun Liu",
+        "Alvin Rajkomar",
+        "Joëlle Barral",
+        "Christopher Semturs",
+        "Alan Karthikesalingam",
+        "Vivek Natarajan"
+      ],
+      "abstract": "Large language models (LLMs) have demonstrated impressive capabilities, but the bar for clinical applications is high. Attempts to assess the clinical knowledge of models typically rely on automated evaluations based on limited benchmarks. Here, to address these limitations, we present MultiMedQA, a benchmark combining six existing medical question answering datasets spanning professional medicine, research and consumer queries and a new dataset of medical questions searched online, HealthSearchQA. We propose a human evaluation framework for model answers along multiple axes including factuality, comprehension, reasoning, possible harm and bias. In addition, we evaluate Pathways Language Model<sup>1</sup> (PaLM, a 540-billion parameter LLM) and its instruction-tuned variant, Flan-PaLM<sup>2</sup> on MultiMedQA. Using a combination of prompting strategies, Flan-PaLM achieves state-of-the-art accuracy on every MultiMedQA multiple-choice dataset (MedQA<sup>3</sup>, MedMCQA<sup>4</sup>, PubMedQA<sup>5</sup> and Measuring Massive Multitask Language Understanding (MMLU) clinical topics<sup>6</sup>), including 67.6% accuracy on MedQA (US Medical Licensing Exam-style questions), surpassing the prior state of the art by more than 17%. However, human evaluation reveals key gaps. To resolve this, we introduce instruction prompt tuning, a parameter-efficient approach for aligning LLMs to new domains using a few exemplars. The resulting model, Med-PaLM, performs encouragingly, but remains"
+    }
+  ],
+  "status": "finished",
+  "stop_reason": "final_answer_generated",
+  "metrics": {},
+  "final_answer": "## Определение\n\nВ контексте представленных научных источников, оценка больших языковых моделей (LLM) определяется как процесс систематического анализа их производительности и способности решать специфические задачи, такие как логическое рассуждение, генерация кода или медицинская диагностика. Оценка выходит за рамки простых метрик (например, точности) и включает в себя «тонкие» (fine-level) оценки, охватывающие как правильность ответов, так и правильность объяснений (Source 1). Процесс-ориентированные аспекты оценки подразумевают анализ этапов генерации, зависимостей в коде и семантического рассуждения, а не только финального результата (Source 2, Source 8). Для обеспечения эффективного и этичного развертывания моделей требуются специализированные оценочные фреймворки и эмпирическая валидация (Source 5).\n\n## Основные подходы\n\nНа основе про"
+}

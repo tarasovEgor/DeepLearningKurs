@@ -1,0 +1,96 @@
+{
+  "topic": "Graph RAG for enterprise knowledge systems",
+  "objective": "Подготовить структурированный научно-аналитический обзор темы",
+  "history": [
+    {
+      "timestamp": "2026-04-23T20:18:33Z",
+      "step_id": 0,
+      "action": "search_wikipedia",
+      "payload": {
+        "topic": "Graph RAG for enterprise knowledge systems"
+      },
+      "result_preview": "empty",
+      "n_sources": 0,
+      "next_reason": "Need general context before scientific search.",
+      "latency_ms": 940.0529861450195
+    },
+    {
+      "timestamp": "2026-04-23T20:18:35Z",
+      "step_id": 1,
+      "action": "search_openalex",
+      "payload": {
+        "query": "Graph RAG for enterprise knowledge systems",
+        "per_page": 8
+      },
+      "result_preview": "found=8",
+      "n_sources": 8,
+      "next_reason": "If too few sources, rewrite query and retry.",
+      "latency_ms": 1237.7090454101562
+    },
+    {
+      "timestamp": "2026-04-23T20:18:35Z",
+      "step_id": 2,
+      "action": "extract_notes",
+      "payload": {
+        "n_sources": 8,
+        "top_k": 3
+      },
+      "result_preview": "notes_prepared=3",
+      "n_sources": 8,
+      "next_reason": "Generate final answer from context and notes.",
+      "latency_ms": null
+    },
+    {
+      "timestamp": "2026-04-23T20:18:39Z",
+      "step_id": 3,
+      "action": "generate_final_answer",
+      "payload": {
+        "topic": "Graph RAG for enterprise knowledge systems",
+        "n_notes": 3
+      },
+      "result_preview": "",
+      "n_sources": 8,
+      "next_reason": "Either finish or evaluate and revise.",
+      "latency_ms": null
+    }
+  ],
+  "n_sources": 8,
+  "notes": [
+    {
+      "id": "https://openalex.org/W4406840428",
+      "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+      "year": 2025,
+      "authors": [
+        "Preston Rasmussen",
+        "Pavlo Paliychuk",
+        "Travis Beauvais",
+        "Jack Ryan",
+        "Daniel Chalef"
+      ],
+      "abstract": "We introduce Zep, a novel memory layer service for AI agents that outperforms the current state-of-the-art system, MemGPT, in the Deep Memory Retrieval (DMR) benchmark. Additionally, Zep excels in more comprehensive and challenging evaluations than DMR that better reflect real-world enterprise use cases. While existing retrieval-augmented generation (RAG) frameworks for large language model (LLM)-based agents are limited to static document retrieval, enterprise applications demand dynamic knowledge integration from diverse sources including ongoing conversations and business data. Zep addresses this fundamental limitation through its core component Graphiti -- a temporally-aware knowledge graph engine that dynamically synthesizes both unstructured conversational data and structured business data while maintaining historical relationships. In the DMR benchmark, which the MemGPT team established as their primary evaluation metric, Zep demonstrates superior performance (94.8% vs 93.4%). Beyond DMR, Zep's capabilities are further validated through the more challenging LongMemEval benchmark, which better reflects enterprise use cases through complex temporal reasoning tasks. In this evaluation, Zep achieves substantial results with accuracy improvements of up to 18.5% while simultaneously reducing response latency by 90% compared to baseline implementations. These results are particularly pronounced in enterprise-critical tasks such as cross-session information synthesis and long-"
+    },
+    {
+      "id": "https://openalex.org/W4410516611",
+      "title": "Conceptual Graph RAG Models for Complex Semantic Query Processing",
+      "year": 2025,
+      "authors": [
+        "Gartman Ievgen"
+      ],
+      "abstract": "This article introduces a new class of models for handling complex semantic queries-Conceptual Graph RAG Models-which combine the representational strengths of Conceptual Graphs (CG) with the dynamic retrieval capabilities of the Retrieval-Augmented Generation (RAG) paradigm. The paper examines two recent architectures, Graph RAG and G-Retriever, focusing on the extraction of relevant subgraphs, their optimal construction using Prize-Collecting Steiner Tree algorithms, and integration with large language models (LLMs) via soft prompt tuning. Methods such as Prompt Tuning and LoRA are discussed for enhancing efficiency while reducing the number of trainable parameters. A comprehensive review of evaluation metrics is presented, including precision/recall in retrieval, BERTScore, Mean Reciprocal Rank (MRR), Hop-Accuracy, and hallucination detection. Benchmark datasets such as PATQA, MINTQA, and WebQSP are also analyzed. The results show that the proposed approaches deliver high answer accuracy, improved interpretability, and greater robustness against misinformation-particularly when scaled to large knowledge graphs. The insights offered in this work will be of particular interest to researchers focused on ontology formalization and knowledge representation, especially those working at the intersection of symbolic reasoning and neural retrieval-generation systems. The topic also holds practical value for system architects and engineers of enterprise semantic platforms aiming to "
+    },
+    {
+      "id": "https://openalex.org/W7133498371",
+      "title": "Leveraging NLP and Retrieval-Augmented Generation (RAG) Models for Automated Business Intelligence Query Resolution",
+      "year": 2024,
+      "authors": [
+        "Linda Aluso",
+        "Joy Onma Enyejo"
+      ],
+      "abstract": "The rapid expansion of enterprise data ecosystems has intensified the demand for intelligent Business Intelligence (BI) systems capable of translating natural language queries into accurate analytical insights without requiring technical expertise. Traditional BI query interfaces rely heavily on structured query languages and predefined dashboards, creating bottlenecks in decision-making workflows and limiting accessibility for non-technical stakeholders. This paper proposes a novel framework titled Adaptive Contextual Retrieval-Augmented Intelligence Engine (ACRIE), which integrates advanced Natural Language Processing (NLP) with Retrieval-Augmented Generation (RAG) to automate business intelligence query resolution with improved semantic understanding, contextual grounding, and analytical accuracy. The proposed model combines transformer-based semantic parsing using Domain-Tuned BERT embeddings, hybrid vector–symbolic retrieval, and a dynamically optimized RAG pipeline that retrieves enterprise knowledge artifacts prior to response synthesis. Unlike conventional RAG implementations that rely solely on similarity search, ACRIE introduces a Context-Aware Query Reformulation Algorithm (CAQRA) and a Multi-Stage Evidence Ranking Mechanism (MSERM) to minimize hallucinations and enhance numerical reasoning during analytical query generation. Performance is evaluated against baseline systems including Text-to-SQL transformers, standard RAG architectures, and rule-based BI assistant"
+    }
+  ],
+  "status": "finished",
+  "stop_reason": "final_answer_generated",
+  "metrics": {},
+  "final_answer": ""
+}

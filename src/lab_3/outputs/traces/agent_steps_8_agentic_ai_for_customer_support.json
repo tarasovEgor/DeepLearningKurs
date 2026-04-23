@@ -1,0 +1,120 @@
+{
+  "topic": "Agentic AI for customer support",
+  "objective": "Подготовить структурированный научно-аналитический обзор темы",
+  "history": [
+    {
+      "timestamp": "2026-04-23T20:39:40Z",
+      "step_id": 0,
+      "action": "search_wikipedia",
+      "payload": {
+        "topic": "Agentic AI for customer support"
+      },
+      "result_preview": "empty",
+      "n_sources": 0,
+      "next_reason": "Need general context before scientific search.",
+      "latency_ms": 931.0948848724365
+    },
+    {
+      "timestamp": "2026-04-23T20:39:41Z",
+      "step_id": 1,
+      "action": "search_openalex",
+      "payload": {
+        "query": "Agentic AI for customer support",
+        "per_page": 8
+      },
+      "result_preview": "found=8",
+      "n_sources": 8,
+      "next_reason": "If too few sources, rewrite query and retry.",
+      "latency_ms": 1242.2137260437012
+    },
+    {
+      "timestamp": "2026-04-23T20:39:41Z",
+      "step_id": 2,
+      "action": "extract_notes",
+      "payload": {
+        "n_sources": 8,
+        "top_k": 5
+      },
+      "result_preview": "notes_prepared=5",
+      "n_sources": 8,
+      "next_reason": "Generate final answer from context and notes.",
+      "latency_ms": null
+    },
+    {
+      "timestamp": "2026-04-23T20:39:46Z",
+      "step_id": 3,
+      "action": "generate_final_answer",
+      "payload": {
+        "topic": "Agentic AI for customer support",
+        "n_notes": 5
+      },
+      "result_preview": "",
+      "n_sources": 8,
+      "next_reason": "Either finish or evaluate and revise.",
+      "latency_ms": null
+    }
+  ],
+  "n_sources": 8,
+  "notes": [
+    {
+      "id": "https://openalex.org/W4407142724",
+      "title": "Generative AI at Work",
+      "year": 2025,
+      "authors": [
+        "Erik Brynjolfsson",
+        "Danielle Li",
+        "Lindsey Raymond"
+      ],
+      "abstract": "Abstract We study the staggered introduction of a generative AI–based conversational assistant using data from 5,172 customer-support agents. Access to AI assistance increases worker productivity, as measured by issues resolved per hour, by 15% on average, with substantial heterogeneity across workers. The effects vary significantly across different agents. Less experienced and lower-skilled workers improve both the speed and quality of their output, while the most experienced and highest-skilled workers see small gains in speed and small declines in quality. We also find evidence that AI assistance facilitates worker learning and improves English fluency, particularly among international agents. While AI systems improve with more training data, we find that the gains from AI adoption are largest for moderately rare problems, where human agents have less baseline experience but the system still has adequate training data. Finally, we provide evidence that AI assistance improves the experience of work along several dimensions: customers are more polite and less likely to ask to speak to a manager."
+    },
+    {
+      "id": "https://openalex.org/W4412505619",
+      "title": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+      "year": 2025,
+      "authors": [
+        "Ranjan Sapkota",
+        "Konstantinos I. Roumeliotis",
+        "Manoj Karkee"
+      ],
+      "abstract": "This review critically distinguishes between AI Agents and Agentic AI, offering a structured, conceptual taxonomy, application mapping, and analysis of opportunities and challenges to clarify their divergent design philosophies and capabilities. We begin by outlining the search strategy and foundational definitions, characterizing AI Agents as modular systems driven and enabled by LLMs and LIMs for taskspecific automation. Generative AI is positioned as a precursor providing the foundation, with AI agents advancing through tool integration, prompt engineering, and reasoning enhancements. We then characterize Agentic AI systems, which, in contrast to AI Agents, represent a paradigm shift marked by multi-agent collaboration, dynamic task decomposition, persistent memory, and coordinated autonomy. Through a chronological evaluation of architectural evolution, operational mechanisms, interaction styles, and autonomy levels, we present a comparative analysis across both AI agents and agentic AI paradigms. Application domains enabled by AI Agents such as customer support, scheduling, and data summarization are then contrasted with Agentic AI deployments in research automation, robotic coordination, and medical decision support. We further examine unique challenges in each paradigm including hallucination, brittleness, emergent behavior, and coordination failure, and propose targeted solutions such as ReAct loops, retrieval-augmented generation (RAG), automation coordination layers,"
+    },
+    {
+      "id": "https://openalex.org/W4390051025",
+      "title": "The Caring Machine: Feeling AI for Customer Care",
+      "year": 2023,
+      "authors": [
+        "Ming‐Hui Huang",
+        "Roland T. Rust"
+      ],
+      "abstract": "Customer care is important for its role in relationship building. This role has traditionally been performed by human customer agents; however, the emergence of interactive generative AI (GenAI) shows potential for using AI for customer care in emotionally charged interactions. Bridging practice and the academic literatures in marketing and computer science, this article develops an AI-enabled customer care journey, from accurate emotion recognition to empathetic response, emotional management support, and, finally, the establishment of an emotional connection. Marketing requirements for each of the stages are derived from in-depth interviews with top managers and a survey of chief marketing officers. By juxtaposing these requirements against the current feeling capabilities of GenAI, the authors highlight the technological challenges engineers must tackle. The article concludes with a set of marketing tenets for implementing and researching the caring machine. These include verifying emotion recognition accuracy using marketing emotion theories through multiple emotion signals and methods, utilizing prompt engineering to enhance GenAI’s emotion understanding, employing “response engineering” to personalize emotion management recommendations, and strategically deploying GenAI for emotional connection to simultaneously enhance customer emotional well-being and customer lifetime value."
+    },
+    {
+      "id": "https://openalex.org/W4380990336",
+      "title": "What (de) motivates customers to use AI-powered conversational agents for shopping? The extended behavioral reasoning perspective",
+      "year": 2023,
+      "authors": [
+        "Ihsan Ullah Jan",
+        "Seong-Goo Ji",
+        "Changju Kim"
+      ],
+      "abstract": "Artificial Intelligence (AI)-powered conversational agents have become ubiquitous tools in the digital transformation of conventional customer-company interactions. Despite the widespread implementation of Artificial Intelligence (AI)-powered conversational agents, there is still a limited understanding of how customers use and resist these technologies for shopping. To address this gap, this study investigates factors that influence the usage and resistance of AI-based conversational agents for shopping using the extended behavioral reasoning theory (BRT) and partial least squares-based structural equation modeling (PLS-SEM). To test the proposed framework, this study conducted two empirical studies in South Korea. Study 1 focused on text-based chatbots with a sample of 232 participants, while Study 2 examined voice-based chatbots with a sample of 234 participants. The results of the both studies mainly supported the hypotheses driven by the extended BRT. Theoretically, this study contributes by offering a comprehensive understanding of customer motivation, attitudes, and behavioral intentions toward the use of AI-powered conversational agents in shopping. Managerially, this study provides important insights for retail managers and developers of AI-powered conversational agents for shopping. By understanding the factors that drive customer usage and resistance, managers, and developers can better design and deploy these innovative technologies to enhance the customer experie"
+    },
+    {
+      "id": "https://openalex.org/W4292248419",
+      "title": "Do You Mind if I Ask You a Personal Question? How AI Service Agents Alter Consumer Self-Disclosure",
+      "year": 2022,
+      "authors": [
+        "TaeWoo Kim",
+        "Li Jiang",
+        "Adam Duhachek",
+        "Hyejin Lee",
+        "Aaron Garvey"
+      ],
+      "abstract": "The use of Artificial Intelligence (AI) has grown rapidly in the service industry and AI’s emotional capabilities have become an important feature for interacting with customers. The current research examines personal disclosures that occur during consumer interactions with AI and humans in service settings. We found that consumers’ lay beliefs about AI (i.e., a perceived lack of social judgment capability) lead to enhanced disclosure of sensitive personal information to AI (vs. humans). We identify boundaries for this effect such that consumers prefer disclosure to humans over AI in (i) contexts where social support (rather than social judgment) is expected and (ii) contexts where sensitive information will be curated by the agent for social dissemination. In addition, we reveal underlying psychological processes such that the motivation to avoid negative social judgment favors disclosing to AI whereas seeking emotional support favors disclosing to humans. Moreover, we reveal that adding humanlike factors to AI can increase consumer fear of social judgment (reducing disclosure in contexts of social risk) while simultaneously increasing perceived AI capacity for empathy (increasing disclosure in contexts of social support). Taken together, these findings provide theoretical and practical insights into tradeoffs between utilizing AI versus human agents in service contexts."
+    }
+  ],
+  "status": "finished",
+  "stop_reason": "final_answer_generated",
+  "metrics": {},
+  "final_answer": ""
+}

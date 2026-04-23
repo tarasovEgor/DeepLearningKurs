@@ -1,0 +1,9 @@
+topic,mode,correctness,groundedness,completeness,coverage,source_consistency,rubric,present_sections,n_steps,n_sources,latency,stop_reason,comment
+Agentic AI for customer support,agent_steps_8,0,0,0,0,0,0.0,0,4,8,7.2527220249176025,final_answer_generated,Evaluator did not return valid JSON.
+Graph RAG for enterprise knowledge systems,agent_steps_8,0,0,0,0,0,0.0,0,4,8,6.186751842498779,final_answer_generated,Evaluator did not return valid JSON.
+LLM evaluation and process-aware metrics,agent_steps_8,0,0,0,0,0,0.0,2,4,8,26.857869148254395,final_answer_generated,Evaluator did not return valid JSON.
+Tool-using language models in scientific search,agent_steps_8,0,0,0,0,0,0.0,0,4,8,5.6720147132873535,final_answer_generated,Evaluator did not return valid JSON.
+Retrieval-augmented generation in medicine,agent_steps_8,0,0,0,0,0,0.0,0,4,8,6.969411134719849,final_answer_generated,Evaluator did not return valid JSON.
+Planning and reflection in LLM agents,agent_steps_8,0,0,0,0,0,0.0,1,4,8,27.261947870254517,final_answer_generated,Evaluator did not return valid JSON.
+Human-in-the-loop AI systems,agent_steps_8,0,0,0,0,0,0.0,2,4,8,19.76938796043396,final_answer_generated,Evaluator did not return valid JSON.
+Knowledge graphs for procedural reasoning,agent_steps_8,0,0,0,0,0,0.0,0,4,8,6.388009309768677,final_answer_generated,"Ответ отсутствует в предоставленном тексте. Невозможно провести оценку по критериям корректности, заземленности, полноты и согласованности с источниками, так как отсутствует сам ответ."

@@ -1,0 +1,141 @@
+{
+  "topic": "Planning and reflection in LLM agents",
+  "objective": "Подготовить структурированный научно-аналитический обзор темы",
+  "history": [
+    {
+      "timestamp": "2026-04-23T20:33:27Z",
+      "step_id": 0,
+      "action": "search_wikipedia",
+      "payload": {
+        "topic": "Planning and reflection in LLM agents"
+      },
+      "result_preview": "empty",
+      "n_sources": 0,
+      "next_reason": "Need general context before scientific search.",
+      "latency_ms": 864.548921585083
+    },
+    {
+      "timestamp": "2026-04-23T20:33:28Z",
+      "step_id": 1,
+      "action": "search_openalex",
+      "payload": {
+        "query": "Planning and reflection in LLM agents",
+        "per_page": 8
+      },
+      "result_preview": "found=8",
+      "n_sources": 8,
+      "next_reason": "If too few sources, rewrite query and retry.",
+      "latency_ms": 1283.4911346435547
+    },
+    {
+      "timestamp": "2026-04-23T20:33:28Z",
+      "step_id": 2,
+      "action": "extract_notes",
+      "payload": {
+        "n_sources": 8,
+        "top_k": 5
+      },
+      "result_preview": "notes_prepared=5",
+      "n_sources": 8,
+      "next_reason": "Generate final answer from context and notes.",
+      "latency_ms": null
+    },
+    {
+      "timestamp": "2026-04-23T20:33:56Z",
+      "step_id": 3,
+      "action": "generate_final_answer",
+      "payload": {
+        "topic": "Planning and reflection in LLM agents",
+        "n_notes": 5
+      },
+      "result_preview": "## Определение\n\nВ контексте агентов на основе больших языковых моделей (LLM), планирование и рефлексия определяются как ключевые механизмы, обеспечивающие автономность, адаптивность и целеориентированное рассуждение. Согласно обзору Bandi et al. (2025), агентные системы выходят за рамки традиционного ИИ, фокусируясь на достижении целей через поддержку планирования, памяти и рефлексии. Singh et al.",
+      "n_sources": 8,
+      "next_reason": "Either finish or evaluate and revise.",
+      "latency_ms": null
+    }
+  ],
+  "n_sources": 8,
+  "notes": [
+    {
+      "id": "https://openalex.org/W4414023998",
+      "title": "The Rise of Agentic AI: A Review of Definitions, Frameworks, Architectures, Applications, Evaluation Metrics, and Challenges",
+      "year": 2025,
+      "authors": [
+        "Ajay Bandi",
+        "Bhavani Kongari",
+        "Roshini Naguru",
+        "Sahitya Pasnoor",
+        "Sri Vidya Vilipala"
+      ],
+      "abstract": "Agentic AI systems are a recently emerged and important approach that goes beyond traditional AI, generative AI, and autonomous systems by focusing on autonomy, adaptability, and goal-driven reasoning. This study provides a clear review of agentic AI systems by bringing together their definitions, frameworks, and architectures, and by comparing them with related areas like generative AI, autonomic computing, and multi-agent systems. To do this, we reviewed 143 primary studies on current LLM-based and non-LLM-driven agentic systems and examined how they support planning, memory, reflection, and goal pursuit. Furthermore, we classified architectural models, input–output mechanisms, and applications based on their task domains where agentic AI is applied, supported using tabular summaries that highlight real-world case studies. Evaluation metrics were classified as qualitative and quantitative measures, along with available testing methods of agentic AI systems to check the system’s performance and reliability. This study also highlights the main challenges and limitations of agentic AI, covering technical, architectural, coordination, ethical, and security issues. We organized the conceptual foundations, available tools, architectures, and evaluation metrics in this research, which defines a structured foundation for understanding and advancing agentic AI. These findings aim to help researchers and developers build better, clearer, and more adaptable systems that support respon"
+    },
+    {
+      "id": "https://openalex.org/W4408388242",
+      "title": "A feasibility study of automating radiotherapy planning with large language model agents",
+      "year": 2025,
+      "authors": [
+        "Qingxin Wang",
+        "Zhongqiu Wang",
+        "Minghua Li",
+        "Xinye Ni",
+        "Rong Tan",
+        "Wenwen Zhang",
+        "Maitudi Wubulaishan",
+        "Wei Wang",
+        "Zhiyong Yuan",
+        "Zhen Zhang",
+        "Cong Liu"
+      ],
+      "abstract": "<i>Objective.</i>Radiotherapy planning requires significant expertise to balance tumor control and organ-at-risk (OAR) sparing. Automated planning can improve both efficiency and quality. This study introduces GPT-Plan, a novel multi-agent system powered by the GPT-4 family of large language models (LLMs), for automating the iterative radiotherapy plan optimization.<i>Approach.</i>GPT-Plan uses LLM-driven agents, mimicking the collaborative clinical workflow of a dosimetrist and physicist, to iteratively generate and evaluate text-based radiotherapy plans based on predefined criteria. Supporting tools assist the agents by leveraging historical plans, mitigating LLM hallucinations, and balancing exploration and exploitation. Performance was evaluated on 12 lung (IMRT) and 5 cervical (VMAT) cancer cases, benchmarked against the ECHO auto-planning method and manual plans. The impact of historical plan retrieval on efficiency was also assessed.<i>Results.</i>For IMRT lung cancer cases, GPT-Plan generated high-quality plans, demonstrating superior target coverage and homogeneity compared to ECHO while maintaining comparable or better OAR sparing. For VMAT cervical cancer cases, plan quality was comparable to a senior physicist and consistently superior to a junior physicist, particularly for OAR sparing. Retrieving historical plans significantly reduced the number of required optimization iterations for lung cases (<i>p</i> < 0.01) and yielded iteration counts comparable to those "
+    },
+    {
+      "id": "https://openalex.org/W4401628481",
+      "title": "Large Language Model Enhanced Multi-Agent Systems for 6G Communications",
+      "year": 2024,
+      "authors": [
+        "Feibo Jiang",
+        "Yubo Peng",
+        "Li Dong",
+        "Kezhi Wang",
+        "Kun Yang",
+        "Cunhua Pan",
+        "Dusit Niyato",
+        "Octavia A. Dobre"
+      ],
+      "abstract": "The rapid development of the large language model (LLM) presents huge opportunities for 6G communications – for example, network optimization and management – by allowing users to input task requirements to LLMs with natural language. However, directly applying native LLMs in 6G encounters various challenges, such as a lack of communication data and knowledge, and limited logical reasoning, evaluation, and refinement abilities. Integrating LLMs with the capabilities of retrieval, planning, memory, evaluation, and reflection in agents can greatly enhance the potential of LLMs for 6G communications. To this end, we propose CommLLM, a multi-agent system with customized communication knowledge and tools for solving communication-related tasks using natural language. This system consists of three components: multi-agent data retrieval (MDR), which employs the condensate and inference agents to refine and summarize communication knowledge from the knowledge base, expanding the knowledge boundaries of LLMs in 6G communications; multi-agent collaborative planning (MCP), which utilizes multiple planning agents to generate feasible solutions for the communication-re-lated task from different perspectives based on the retrieved knowledge; and multi-agent evaluation and reflection (MER), which utilizes the evaluation agent to assess the solutions, and applies the reflection agent and refinement agent to provide improvement suggestions for current solutions. Finally, we validate the effec"
+    },
+    {
+      "id": "https://openalex.org/W4391620956",
+      "title": "Understanding the planning of LLM agents: A survey",
+      "year": 2024,
+      "authors": [
+        "Xu Huang",
+        "Weiwen Liu",
+        "Xiaolong Chen",
+        "Xingmei Wang",
+        "Hao Wang",
+        "Defu Lian",
+        "Yasheng Wang",
+        "Ruiming Tang",
+        "Enhong Chen"
+      ],
+      "abstract": "As Large Language Models (LLMs) have shown significant intelligence, the progress to leverage LLMs as planning modules of autonomous agents has attracted more attention. This survey provides the first systematic view of LLM-based agents planning, covering recent works aiming to improve planning ability. We provide a taxonomy of existing works on LLM-Agent planning, which can be categorized into Task Decomposition, Plan Selection, External Module, Reflection and Memory. Comprehensive analyses are conducted for each direction, and further challenges for the field of research are discussed."
+    },
+    {
+      "id": "https://openalex.org/W4400491795",
+      "title": "Enhancing AI Systems with Agentic Workflows Patterns in Large Language Model",
+      "year": 2024,
+      "authors": [
+        "Aditi Singh",
+        "Abul Ehtesham",
+        "Saket Kumar",
+        "Tala Talaei Khoei"
+      ],
+      "abstract": "This paper explores the significant shift towards agentic workflows in the application of Large Language Models (LLMs), moving away from traditional, linear interactions between users and AI. Through a case study analysis, we highlight the effectiveness of agentic workflows, which facilitate a more dynamic and iterative engagement, in improving outcomes in tasks such as question answering, code generation or stock analysis. Central to the agentic workflow are four foundational design patterns: reflection, planning, multi-agent collaboration, and tool utilization. These components are crucial for boosting LLM productivity and enhancing performance. The study demonstrates how agentic workflows, by promoting an iterative and reflective process, can serve as a crucial step towards achieving Artificial General Intelligence (AGI)."
+    }
+  ],
+  "status": "finished",
+  "stop_reason": "final_answer_generated",
+  "metrics": {},
+  "final_answer": "## Определение\n\nВ контексте агентов на основе больших языковых моделей (LLM), планирование и рефлексия определяются как ключевые механизмы, обеспечивающие автономность, адаптивность и целеориентированное рассуждение. Согласно обзору Bandi et al. (2025), агентные системы выходят за рамки традиционного ИИ, фокусируясь на достижении целей через поддержку планирования, памяти и рефлексии. Singh et al. (2024) рассматривают планирование и рефлексия как фундаментальные паттерны проектирования агентных рабочих процессов, которые способствуют динамичному и итеративному взаимодействию. Jiang et al. (2024) уточняют, что интеграция возможностей планирования и рефлексии в агентов позволяет преодолеть ограничения нативных LLM, таких как ограниченная логическая"
+}

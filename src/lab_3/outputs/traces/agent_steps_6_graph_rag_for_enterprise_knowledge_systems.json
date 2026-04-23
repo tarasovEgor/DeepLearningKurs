@@ -1,0 +1,125 @@
+{
+  "topic": "Graph RAG for enterprise knowledge systems",
+  "objective": "Подготовить структурированный научно-аналитический обзор темы",
+  "history": [
+    {
+      "timestamp": "2026-04-23T20:35:34Z",
+      "step_id": 0,
+      "action": "search_wikipedia",
+      "payload": {
+        "topic": "Graph RAG for enterprise knowledge systems"
+      },
+      "result_preview": "empty",
+      "n_sources": 0,
+      "next_reason": "Need general context before scientific search.",
+      "latency_ms": 744.2221641540527
+    },
+    {
+      "timestamp": "2026-04-23T20:35:35Z",
+      "step_id": 1,
+      "action": "search_openalex",
+      "payload": {
+        "query": "Graph RAG for enterprise knowledge systems",
+        "per_page": 8
+      },
+      "result_preview": "found=8",
+      "n_sources": 8,
+      "next_reason": "If too few sources, rewrite query and retry.",
+      "latency_ms": 1103.848934173584
+    },
+    {
+      "timestamp": "2026-04-23T20:35:35Z",
+      "step_id": 2,
+      "action": "extract_notes",
+      "payload": {
+        "n_sources": 8,
+        "top_k": 5
+      },
+      "result_preview": "notes_prepared=5",
+      "n_sources": 8,
+      "next_reason": "Generate final answer from context and notes.",
+      "latency_ms": null
+    },
+    {
+      "timestamp": "2026-04-23T20:35:54Z",
+      "step_id": 3,
+      "action": "generate_final_answer",
+      "payload": {
+        "topic": "Graph RAG for enterprise knowledge systems",
+        "n_notes": 5
+      },
+      "result_preview": "## Определение\n\nНа основе представленных источников, **Graph RAG** (Graph Retrieval-Augmented Generation) определяется как эволюция парадигмы Retrieval-Augmented Generation (RAG), которая интегрирует знания из графовых структур (Knowledge Graphs) в процесс генерации ответов большими языковыми моделями (LLM). В отличие от традиционных подходов, полагающихся исключительно на статический поиск по док",
+      "n_sources": 8,
+      "next_reason": "Either finish or evaluate and revise.",
+      "latency_ms": null
+    }
+  ],
+  "n_sources": 8,
+  "notes": [
+    {
+      "id": "https://openalex.org/W4406840428",
+      "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+      "year": 2025,
+      "authors": [
+        "Preston Rasmussen",
+        "Pavlo Paliychuk",
+        "Travis Beauvais",
+        "Jack Ryan",
+        "Daniel Chalef"
+      ],
+      "abstract": "We introduce Zep, a novel memory layer service for AI agents that outperforms the current state-of-the-art system, MemGPT, in the Deep Memory Retrieval (DMR) benchmark. Additionally, Zep excels in more comprehensive and challenging evaluations than DMR that better reflect real-world enterprise use cases. While existing retrieval-augmented generation (RAG) frameworks for large language model (LLM)-based agents are limited to static document retrieval, enterprise applications demand dynamic knowledge integration from diverse sources including ongoing conversations and business data. Zep addresses this fundamental limitation through its core component Graphiti -- a temporally-aware knowledge graph engine that dynamically synthesizes both unstructured conversational data and structured business data while maintaining historical relationships. In the DMR benchmark, which the MemGPT team established as their primary evaluation metric, Zep demonstrates superior performance (94.8% vs 93.4%). Beyond DMR, Zep's capabilities are further validated through the more challenging LongMemEval benchmark, which better reflects enterprise use cases through complex temporal reasoning tasks. In this evaluation, Zep achieves substantial results with accuracy improvements of up to 18.5% while simultaneously reducing response latency by 90% compared to baseline implementations. These results are particularly pronounced in enterprise-critical tasks such as cross-session information synthesis and long-"
+    },
+    {
+      "id": "https://openalex.org/W4410516611",
+      "title": "Conceptual Graph RAG Models for Complex Semantic Query Processing",
+      "year": 2025,
+      "authors": [
+        "Gartman Ievgen"
+      ],
+      "abstract": "This article introduces a new class of models for handling complex semantic queries-Conceptual Graph RAG Models-which combine the representational strengths of Conceptual Graphs (CG) with the dynamic retrieval capabilities of the Retrieval-Augmented Generation (RAG) paradigm. The paper examines two recent architectures, Graph RAG and G-Retriever, focusing on the extraction of relevant subgraphs, their optimal construction using Prize-Collecting Steiner Tree algorithms, and integration with large language models (LLMs) via soft prompt tuning. Methods such as Prompt Tuning and LoRA are discussed for enhancing efficiency while reducing the number of trainable parameters. A comprehensive review of evaluation metrics is presented, including precision/recall in retrieval, BERTScore, Mean Reciprocal Rank (MRR), Hop-Accuracy, and hallucination detection. Benchmark datasets such as PATQA, MINTQA, and WebQSP are also analyzed. The results show that the proposed approaches deliver high answer accuracy, improved interpretability, and greater robustness against misinformation-particularly when scaled to large knowledge graphs. The insights offered in this work will be of particular interest to researchers focused on ontology formalization and knowledge representation, especially those working at the intersection of symbolic reasoning and neural retrieval-generation systems. The topic also holds practical value for system architects and engineers of enterprise semantic platforms aiming to "
+    },
+    {
+      "id": "https://openalex.org/W7133498371",
+      "title": "Leveraging NLP and Retrieval-Augmented Generation (RAG) Models for Automated Business Intelligence Query Resolution",
+      "year": 2024,
+      "authors": [
+        "Linda Aluso",
+        "Joy Onma Enyejo"
+      ],
+      "abstract": "The rapid expansion of enterprise data ecosystems has intensified the demand for intelligent Business Intelligence (BI) systems capable of translating natural language queries into accurate analytical insights without requiring technical expertise. Traditional BI query interfaces rely heavily on structured query languages and predefined dashboards, creating bottlenecks in decision-making workflows and limiting accessibility for non-technical stakeholders. This paper proposes a novel framework titled Adaptive Contextual Retrieval-Augmented Intelligence Engine (ACRIE), which integrates advanced Natural Language Processing (NLP) with Retrieval-Augmented Generation (RAG) to automate business intelligence query resolution with improved semantic understanding, contextual grounding, and analytical accuracy. The proposed model combines transformer-based semantic parsing using Domain-Tuned BERT embeddings, hybrid vector–symbolic retrieval, and a dynamically optimized RAG pipeline that retrieves enterprise knowledge artifacts prior to response synthesis. Unlike conventional RAG implementations that rely solely on similarity search, ACRIE introduces a Context-Aware Query Reformulation Algorithm (CAQRA) and a Multi-Stage Evidence Ranking Mechanism (MSERM) to minimize hallucinations and enhance numerical reasoning during analytical query generation. Performance is evaluated against baseline systems including Text-to-SQL transformers, standard RAG architectures, and rule-based BI assistant"
+    },
+    {
+      "id": "https://openalex.org/W4389984066",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "year": 2023,
+      "authors": [
+        "Yunfan Gao",
+        "Yun Xiong",
+        "Xinyu Gao",
+        "Kangxiang Jia",
+        "Jinliu Pan",
+        "Yuxi Bi",
+        "Yi Dai",
+        "Jiawei Sun",
+        "Wang, Meng",
+        "Wang, Haofen"
+      ],
+      "abstract": "Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development."
+    },
+    {
+      "id": "https://openalex.org/W3153566724",
+      "title": "Zero-shot Slot Filling with DPR and RAG",
+      "year": 2021,
+      "authors": [
+        "Michael Glaß",
+        "Gaetano Rossiello",
+        "Alfio Gliozzo"
+      ],
+      "abstract": "The ability to automatically extract Knowledge Graphs (KG) from a given collection of documents is a long-standing problem in Artificial Intelligence. One way to assess this capability is through the task of slot filling. Given an entity query in form of [Entity, Slot, ?], a system is asked to `fill' the slot by generating or extracting the missing value from a relevant passage or passages. This capability is crucial to create systems for automatic knowledge base population, which is becoming in ever-increasing demand, especially in enterprise applications. Recently, there has been a promising direction in evaluating language models in the same way we would evaluate knowledge bases, and the task of slot filling is the most suitable to this intent. The recent advancements in the field try to solve this task in an end-to-end fashion using retrieval-based language models. Models like Retrieval Augmented Generation (RAG) show surprisingly good performance without involving complex information extraction pipelines. However, the results achieved by these models on the two slot filling tasks in the KILT benchmark are still not at the level required by real-world information extraction systems. In this paper, we describe several strategies we adopted to improve the retriever and the generator of RAG in order to make it a better slot filler. Our KGI0 system (available at https://github.com/IBM/retrieve-write-slot-filling) reached the top-1 position on the KILT leaderboard on both T-RE"
+    }
+  ],
+  "status": "finished",
+  "stop_reason": "final_answer_generated",
+  "metrics": {},
+  "final_answer": "## Определение\n\nНа основе представленных источников, **Graph RAG** (Graph Retrieval-Augmented Generation) определяется как эволюция парадигмы Retrieval-Augmented Generation (RAG), которая интегрирует знания из графовых структур (Knowledge Graphs) в процесс генерации ответов большими языковыми моделями (LLM). В отличие от традиционных подходов, полагающихся исключительно на статический поиск по документам или векторный поиск, Graph RAG использует структурированные представления данных для улучшения семантического понимания, логического вывода и контекстной привязки.\n\nВ контексте корпоративных систем это включает использование временных графов знаний (Temporal Knowledge Graphs) для динамической интеграции данных и концептуальных графов для обработки сложных семантических запросов. Основная цель — преодоление ограничений стандартного RAG, таких как галлюцинации, устаревание знаний и отсутствие прозрачности в процесса"
+}

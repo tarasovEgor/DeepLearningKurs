@@ -1,0 +1,9 @@
+topic,mode,correctness,groundedness,completeness,coverage,source_consistency,rubric,present_sections,n_steps,n_sources,latency,stop_reason,comment
+Agentic AI for customer support,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.231107234954834,final_answer_generated,Evaluator did not return valid JSON.
+Graph RAG for enterprise knowledge systems,agent_topk_3,0,0,0,0,0,0.0,0,4,8,6.4263880252838135,final_answer_generated,Evaluator did not return valid JSON.
+LLM evaluation and process-aware metrics,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.816198825836182,final_answer_generated,Evaluator did not return valid JSON.
+Tool-using language models in scientific search,agent_topk_3,0,0,0,0,0,0.0,2,4,8,23.535785913467407,final_answer_generated,Evaluator did not return valid JSON.
+Retrieval-augmented generation in medicine,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.362855911254883,final_answer_generated,Evaluator did not return valid JSON.
+Planning and reflection in LLM agents,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.64992618560791,final_answer_generated,"В предоставленном материале отсутствует текст ответа для оценки. Поле 'Ответ' пустое, поэтому невозможно проверить корректность, обоснованность или полноту информации."
+Human-in-the-loop AI systems,agent_topk_3,0,0,0,0,0,0.0,0,4,8,5.643858194351196,final_answer_generated,Evaluator did not return valid JSON.
+Knowledge graphs for procedural reasoning,agent_topk_3,0,0,0,0,0,0.0,2,4,8,30.777355670928955,final_answer_generated,Evaluator did not return valid JSON.
