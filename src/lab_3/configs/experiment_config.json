@@ -1,0 +1,7 @@
+{
+    "topics_path": "data/topics.json",
+    "output_dir": "outputs",
+    "default_top_k": 5,
+    "default_max_steps": 6,
+    "min_sources": 3
+  }

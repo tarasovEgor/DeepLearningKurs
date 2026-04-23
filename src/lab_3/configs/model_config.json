@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "base_url": "https://polza.ai/api/v1",
+  "model": "qwen/qwen3.5-35b-a3b",
+  "temperature": 0.2,
+  "timeout": 180,
+  "max_tokens": 200,
+  "api_key_env": "POLZA_AI_API_KEY"
+}
