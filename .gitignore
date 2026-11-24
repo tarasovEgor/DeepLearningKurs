@@ -1,3 +1,5 @@
 __pycache__/
 .vscode/
 **/.DS_Store
+
+input_seismic_data/
